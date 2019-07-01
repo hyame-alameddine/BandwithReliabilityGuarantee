@@ -1,0 +1,55 @@
+
+=============================Network : FatTreeNetwork(12,4,2,2,3,500,1000,1000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for VMProtectionModelTest()=
+====Finished test of set 0====
+
+
+=============================Network : FatTreeNetwork(12,4,2,2,3,500,1000,1000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for VMProtectionModelTest()=
+====Finished test of set 0====
+
+
+=============================Network : FatTreeNetwork(12,4,2,2,3,500,1000,1000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for VMProtectionModelTest()=
+====Finished test of set 0====
+
+
+=============================Network : FatTreeNetwork(12,4,2,2,3,500,1000,1000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for VMProtectionModelTest()=
+====Finished test of set 0====
+
+
+=============================Network : FatTreeNetwork(12,4,2,2,3,500,1000,1000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for VMProtectionModelTest()=
+====Finished test of set 0====
+

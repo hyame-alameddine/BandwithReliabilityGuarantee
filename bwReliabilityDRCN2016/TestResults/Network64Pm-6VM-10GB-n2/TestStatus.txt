@@ -1,0 +1,89 @@
+
+=============================Network : FatTreeNetwork(64,6,2,2,16,1000,10000,10000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 1====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 2====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 3====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 4====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+
+=============================LOAD : 4===Arrival : 40===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 1====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 2====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 3====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 4====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+
+=============================LOAD : 6===Arrival : 60===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 1====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 2====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 3====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 4====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+
+=============================LOAD : 8===Arrival : 80===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 1====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 2====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 3====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 4====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+
+=============================LOAD : 10===Arrival : 100===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 1====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 2====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 3====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=
+====Starting test for set 4====
+=Starting test for backupToVmMappingModelTest()=
+=Starting test for backupEmbeddingBaseline()=

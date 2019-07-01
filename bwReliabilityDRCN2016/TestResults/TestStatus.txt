@@ -1,0 +1,8 @@
+
+=============================Network : FatTreeNetwork(128,6,2,2,32,1000,10000,10000);=============================
+
+=============================Requests: Nb : 10=== VMs range : <5,10> === Bw range : <50,200 >=============================
+
+=============================LOAD : 2===Arrival : 20===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for backupToVmMappingModelTest()=
