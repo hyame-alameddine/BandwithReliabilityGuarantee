@@ -1,0 +1,100 @@
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 2 SET NB: 0====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 2 SET NB: 1====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 2 SET NB: 2====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 2 SET NB: 3====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 2 SET NB: 4====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 4 SET NB: 0====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 4 SET NB: 1====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 4 SET NB: 2====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 4 SET NB: 3====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 4 SET NB: 4====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 6 SET NB: 0====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 6 SET NB: 1====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 6 SET NB: 2====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 6 SET NB: 3====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 6 SET NB: 4====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 8 SET NB: 0====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 8 SET NB: 1====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 8 SET NB: 2====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 8 SET NB: 3====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 8 SET NB: 4====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 10 SET NB: 0====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 10 SET NB: 1====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 10 SET NB: 2====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 10 SET NB: 3====
+
+
+====Reserved bandwidth for admitted requests  by backupEmbeddingBaseline () ====
+====LOAD: 10 SET NB: 4====

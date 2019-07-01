@@ -1,0 +1,2118 @@
+  
+--------------Request 0 : (N=9, B=403) : has 2 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---0
+PRIMARY Virtual Machine 1---hosted on physical server---0
+PRIMARY Virtual Machine 2---hosted on physical server---1
+PRIMARY Virtual Machine 3---hosted on physical server---1
+PRIMARY Virtual Machine 4---hosted on physical server---2
+PRIMARY Virtual Machine 5---hosted on physical server---2
+PRIMARY Virtual Machine 6---hosted on physical server---3
+PRIMARY Virtual Machine 7---hosted on physical server---3
+PRIMARY Virtual Machine 8---hosted on physical server---4
+BACKUP Virtual Machine 9---hosted on physical server---4
+BACKUP Virtual Machine 10---hosted on physical server---28
+ Reserved bandwidth for this request --------------
+On link 0 --- Primary Bandwidth: 806---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 1 --- Primary Bandwidth: 806---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 2 --- Primary Bandwidth: 806---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 3 --- Primary Bandwidth: 806---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 4 --- Primary Bandwidth: 403---Backup Bandwidth: 403---Shared Bandwidth: 0
+On link 28 --- Primary Bandwidth: 0---Backup Bandwidth: 403---Shared Bandwidth: 0
+On link 128 --- Primary Bandwidth: 1612---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 129 --- Primary Bandwidth: 1612---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 130 --- Primary Bandwidth: 403---Backup Bandwidth: 403---Shared Bandwidth: 0
+On link 131 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 132 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 133 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 134 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 136 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 137 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 138 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 139 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 141 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 142 --- Primary Bandwidth: 0---Backup Bandwidth: 403---Shared Bandwidth: 0
+On link 143 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 144 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 145 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 146 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 147 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 149 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 150 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 151 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 152 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 154 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 155 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 156 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 157 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 158 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 159 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 160 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 161 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 162 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 163 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 164 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 165 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 166 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 168 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 169 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 170 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 172 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 174 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 176 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 177 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 179 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 180 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 181 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 182 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 183 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 184 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 185 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 186 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 187 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 188 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 189 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 190 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 191 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 192 --- Primary Bandwidth: 403---Backup Bandwidth: 806---Shared Bandwidth: 0
+On link 193 --- Primary Bandwidth: 403---Backup Bandwidth: 403---Shared Bandwidth: 0
+On link 194 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 195 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 196 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 197 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 198 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 199 --- Primary Bandwidth: 0---Backup Bandwidth: 403---Shared Bandwidth: 0
+On link 200 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 201 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 203 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 204 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 205 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 206 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 207 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 208 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 209 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 210 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 211 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 212 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 214 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 215 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 216 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 218 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 219 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 220 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 221 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 223 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 1 : (N=6, B=448) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---5
+PRIMARY Virtual Machine 1---hosted on physical server---5
+PRIMARY Virtual Machine 2---hosted on physical server---5
+PRIMARY Virtual Machine 3---hosted on physical server---5
+PRIMARY Virtual Machine 4---hosted on physical server---5
+PRIMARY Virtual Machine 5---hosted on physical server---5
+BACKUP Virtual Machine 6---hosted on physical server---7
+BACKUP Virtual Machine 7---hosted on physical server---7
+BACKUP Virtual Machine 8---hosted on physical server---7
+BACKUP Virtual Machine 9---hosted on physical server---7
+BACKUP Virtual Machine 10---hosted on physical server---7
+BACKUP Virtual Machine 11---hosted on physical server---7
+ Reserved bandwidth for this request --------------
+On link 5 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 2 : (N=5, B=204) : has 5 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---28
+PRIMARY Virtual Machine 1---hosted on physical server---28
+PRIMARY Virtual Machine 2---hosted on physical server---28
+PRIMARY Virtual Machine 3---hosted on physical server---28
+PRIMARY Virtual Machine 4---hosted on physical server---28
+BACKUP Virtual Machine 5---hosted on physical server---29
+BACKUP Virtual Machine 6---hosted on physical server---29
+BACKUP Virtual Machine 7---hosted on physical server---29
+BACKUP Virtual Machine 8---hosted on physical server---29
+BACKUP Virtual Machine 9---hosted on physical server---29
+ Reserved bandwidth for this request --------------
+On link 28 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 3 : (N=8, B=451) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---8
+PRIMARY Virtual Machine 1---hosted on physical server---8
+PRIMARY Virtual Machine 2---hosted on physical server---8
+PRIMARY Virtual Machine 3---hosted on physical server---8
+PRIMARY Virtual Machine 4---hosted on physical server---8
+PRIMARY Virtual Machine 5---hosted on physical server---8
+PRIMARY Virtual Machine 6---hosted on physical server---9
+PRIMARY Virtual Machine 7---hosted on physical server---9
+BACKUP Virtual Machine 8---hosted on physical server---9
+BACKUP Virtual Machine 9---hosted on physical server---9
+BACKUP Virtual Machine 10---hosted on physical server---9
+BACKUP Virtual Machine 11---hosted on physical server---9
+BACKUP Virtual Machine 12---hosted on physical server---10
+BACKUP Virtual Machine 13---hosted on physical server---10
+ Reserved bandwidth for this request --------------
+On link 8 --- Primary Bandwidth: 902---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 9 --- Primary Bandwidth: 902---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 10 --- Primary Bandwidth: 0---Backup Bandwidth: 902---Shared Bandwidth: 0
+On link 132 --- Primary Bandwidth: 0---Backup Bandwidth: 902---Shared Bandwidth: 0
+On link 133 --- Primary Bandwidth: 0---Backup Bandwidth: 902---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 4 : (N=7, B=270) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---12
+PRIMARY Virtual Machine 1---hosted on physical server---12
+PRIMARY Virtual Machine 2---hosted on physical server---12
+PRIMARY Virtual Machine 3---hosted on physical server---12
+PRIMARY Virtual Machine 4---hosted on physical server---12
+PRIMARY Virtual Machine 5---hosted on physical server---12
+PRIMARY Virtual Machine 6---hosted on physical server---13
+BACKUP Virtual Machine 7---hosted on physical server---13
+BACKUP Virtual Machine 8---hosted on physical server---13
+BACKUP Virtual Machine 9---hosted on physical server---13
+BACKUP Virtual Machine 10---hosted on physical server---13
+BACKUP Virtual Machine 11---hosted on physical server---13
+BACKUP Virtual Machine 12---hosted on physical server---15
+ Reserved bandwidth for this request --------------
+On link 12 --- Primary Bandwidth: 270---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 13 --- Primary Bandwidth: 270---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 15 --- Primary Bandwidth: 0---Backup Bandwidth: 270---Shared Bandwidth: 0
+On link 134 --- Primary Bandwidth: 0---Backup Bandwidth: 270---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 0---Backup Bandwidth: 270---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 5 : (N=7, B=440) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---14
+PRIMARY Virtual Machine 1---hosted on physical server---14
+PRIMARY Virtual Machine 2---hosted on physical server---14
+PRIMARY Virtual Machine 3---hosted on physical server---14
+PRIMARY Virtual Machine 4---hosted on physical server---14
+PRIMARY Virtual Machine 5---hosted on physical server---14
+PRIMARY Virtual Machine 6---hosted on physical server---15
+BACKUP Virtual Machine 7---hosted on physical server---81
+BACKUP Virtual Machine 8---hosted on physical server---81
+BACKUP Virtual Machine 9---hosted on physical server---81
+BACKUP Virtual Machine 10---hosted on physical server---81
+BACKUP Virtual Machine 11---hosted on physical server---81
+BACKUP Virtual Machine 12---hosted on physical server---81
+ Reserved bandwidth for this request --------------
+On link 14 --- Primary Bandwidth: 440---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 15 --- Primary Bandwidth: 440---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 81 --- Primary Bandwidth: 0---Backup Bandwidth: 440---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 0---Backup Bandwidth: 440---Shared Bandwidth: 0
+On link 168 --- Primary Bandwidth: 0---Backup Bandwidth: 440---Shared Bandwidth: 0
+On link 195 --- Primary Bandwidth: 0---Backup Bandwidth: 440---Shared Bandwidth: 0
+On link 212 --- Primary Bandwidth: 0---Backup Bandwidth: 440---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 6 : (N=6, B=239) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---80
+PRIMARY Virtual Machine 1---hosted on physical server---80
+PRIMARY Virtual Machine 2---hosted on physical server---80
+PRIMARY Virtual Machine 3---hosted on physical server---80
+PRIMARY Virtual Machine 4---hosted on physical server---80
+PRIMARY Virtual Machine 5---hosted on physical server---80
+BACKUP Virtual Machine 6---hosted on physical server---82
+BACKUP Virtual Machine 7---hosted on physical server---82
+BACKUP Virtual Machine 8---hosted on physical server---82
+BACKUP Virtual Machine 9---hosted on physical server---82
+BACKUP Virtual Machine 10---hosted on physical server---82
+BACKUP Virtual Machine 11---hosted on physical server---82
+ Reserved bandwidth for this request --------------
+On link 80 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 7 : (N=7, B=408) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---16
+PRIMARY Virtual Machine 1---hosted on physical server---16
+PRIMARY Virtual Machine 2---hosted on physical server---16
+PRIMARY Virtual Machine 3---hosted on physical server---16
+PRIMARY Virtual Machine 4---hosted on physical server---16
+PRIMARY Virtual Machine 5---hosted on physical server---16
+PRIMARY Virtual Machine 6---hosted on physical server---17
+BACKUP Virtual Machine 7---hosted on physical server---17
+BACKUP Virtual Machine 8---hosted on physical server---17
+BACKUP Virtual Machine 9---hosted on physical server---17
+BACKUP Virtual Machine 10---hosted on physical server---17
+BACKUP Virtual Machine 11---hosted on physical server---17
+BACKUP Virtual Machine 12---hosted on physical server---19
+ Reserved bandwidth for this request --------------
+On link 16 --- Primary Bandwidth: 408---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 17 --- Primary Bandwidth: 408---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 19 --- Primary Bandwidth: 0---Backup Bandwidth: 408---Shared Bandwidth: 0
+On link 136 --- Primary Bandwidth: 0---Backup Bandwidth: 408---Shared Bandwidth: 0
+On link 137 --- Primary Bandwidth: 0---Backup Bandwidth: 408---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 8 : (N=7, B=387) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 9 : (N=6, B=359) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---18
+PRIMARY Virtual Machine 1---hosted on physical server---18
+PRIMARY Virtual Machine 2---hosted on physical server---18
+PRIMARY Virtual Machine 3---hosted on physical server---18
+PRIMARY Virtual Machine 4---hosted on physical server---18
+PRIMARY Virtual Machine 5---hosted on physical server---18
+BACKUP Virtual Machine 6---hosted on physical server---117
+BACKUP Virtual Machine 7---hosted on physical server---117
+BACKUP Virtual Machine 8---hosted on physical server---117
+BACKUP Virtual Machine 9---hosted on physical server---117
+BACKUP Virtual Machine 10---hosted on physical server---117
+BACKUP Virtual Machine 11---hosted on physical server---117
+ Reserved bandwidth for this request --------------
+On link 18 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 10 : (N=6, B=424) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---11
+PRIMARY Virtual Machine 1---hosted on physical server---11
+PRIMARY Virtual Machine 2---hosted on physical server---11
+PRIMARY Virtual Machine 3---hosted on physical server---11
+PRIMARY Virtual Machine 4---hosted on physical server---11
+PRIMARY Virtual Machine 5---hosted on physical server---11
+BACKUP Virtual Machine 6---hosted on physical server---85
+BACKUP Virtual Machine 7---hosted on physical server---85
+BACKUP Virtual Machine 8---hosted on physical server---85
+BACKUP Virtual Machine 9---hosted on physical server---85
+BACKUP Virtual Machine 10---hosted on physical server---85
+BACKUP Virtual Machine 11---hosted on physical server---85
+ Reserved bandwidth for this request --------------
+On link 11 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 11 : (N=9, B=407) : has 2 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---6
+PRIMARY Virtual Machine 1---hosted on physical server---6
+PRIMARY Virtual Machine 2---hosted on physical server---19
+PRIMARY Virtual Machine 3---hosted on physical server---20
+PRIMARY Virtual Machine 4---hosted on physical server---20
+PRIMARY Virtual Machine 5---hosted on physical server---21
+PRIMARY Virtual Machine 6---hosted on physical server---21
+PRIMARY Virtual Machine 7---hosted on physical server---22
+PRIMARY Virtual Machine 8---hosted on physical server---22
+BACKUP Virtual Machine 9---hosted on physical server---54
+BACKUP Virtual Machine 10---hosted on physical server---54
+ Reserved bandwidth for this request --------------
+On link 6 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 19 --- Primary Bandwidth: 407---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 20 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 21 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 22 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 54 --- Primary Bandwidth: 0---Backup Bandwidth: 814---Shared Bandwidth: 0
+On link 128 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 129 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 130 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 131 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 132 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 133 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 134 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 136 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 137 --- Primary Bandwidth: 407---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 138 --- Primary Bandwidth: 1628---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 139 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 141 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 142 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 143 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 144 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 145 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 146 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 147 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 149 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 150 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 151 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 152 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 154 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 155 --- Primary Bandwidth: 0---Backup Bandwidth: 814---Shared Bandwidth: 0
+On link 156 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 157 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 158 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 159 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 160 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 161 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 162 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 163 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 164 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 165 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 166 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 168 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 169 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 170 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 172 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 174 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 176 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 177 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 179 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 180 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 181 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 182 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 183 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 184 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 185 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 186 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 187 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 188 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 189 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 190 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 191 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 192 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 193 --- Primary Bandwidth: 814---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 194 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 195 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 196 --- Primary Bandwidth: 407---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 197 --- Primary Bandwidth: 1221---Backup Bandwidth: 407---Shared Bandwidth: 0
+On link 198 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 199 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 200 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 201 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 203 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 204 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 205 --- Primary Bandwidth: 0---Backup Bandwidth: 814---Shared Bandwidth: 0
+On link 206 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 207 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 208 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 209 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 210 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 211 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 212 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 214 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 215 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 216 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 218 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 219 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 220 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 221 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 223 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 12 : (N=7, B=383) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---26
+PRIMARY Virtual Machine 1---hosted on physical server---26
+PRIMARY Virtual Machine 2---hosted on physical server---26
+PRIMARY Virtual Machine 3---hosted on physical server---26
+PRIMARY Virtual Machine 4---hosted on physical server---26
+PRIMARY Virtual Machine 5---hosted on physical server---26
+PRIMARY Virtual Machine 6---hosted on physical server---27
+BACKUP Virtual Machine 7---hosted on physical server---27
+BACKUP Virtual Machine 8---hosted on physical server---27
+BACKUP Virtual Machine 9---hosted on physical server---27
+BACKUP Virtual Machine 10---hosted on physical server---27
+BACKUP Virtual Machine 11---hosted on physical server---27
+BACKUP Virtual Machine 12---hosted on physical server---24
+ Reserved bandwidth for this request --------------
+On link 24 --- Primary Bandwidth: 0---Backup Bandwidth: 383---Shared Bandwidth: 0
+On link 26 --- Primary Bandwidth: 383---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 27 --- Primary Bandwidth: 383---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 383---Shared Bandwidth: 0
+On link 141 --- Primary Bandwidth: 0---Backup Bandwidth: 383---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 13 : (N=6, B=229) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---23
+PRIMARY Virtual Machine 1---hosted on physical server---23
+PRIMARY Virtual Machine 2---hosted on physical server---23
+PRIMARY Virtual Machine 3---hosted on physical server---23
+PRIMARY Virtual Machine 4---hosted on physical server---23
+PRIMARY Virtual Machine 5---hosted on physical server---23
+BACKUP Virtual Machine 6---hosted on physical server---74
+BACKUP Virtual Machine 7---hosted on physical server---74
+BACKUP Virtual Machine 8---hosted on physical server---74
+BACKUP Virtual Machine 9---hosted on physical server---74
+BACKUP Virtual Machine 10---hosted on physical server---74
+BACKUP Virtual Machine 11---hosted on physical server---74
+ Reserved bandwidth for this request --------------
+On link 23 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 14 : (N=10, B=128) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---24
+PRIMARY Virtual Machine 1---hosted on physical server---24
+PRIMARY Virtual Machine 2---hosted on physical server---24
+PRIMARY Virtual Machine 3---hosted on physical server---24
+PRIMARY Virtual Machine 4---hosted on physical server---25
+PRIMARY Virtual Machine 5---hosted on physical server---25
+PRIMARY Virtual Machine 6---hosted on physical server---25
+PRIMARY Virtual Machine 7---hosted on physical server---25
+PRIMARY Virtual Machine 8---hosted on physical server---25
+PRIMARY Virtual Machine 9---hosted on physical server---25
+BACKUP Virtual Machine 10---hosted on physical server---100
+BACKUP Virtual Machine 11---hosted on physical server---100
+BACKUP Virtual Machine 12---hosted on physical server---100
+BACKUP Virtual Machine 13---hosted on physical server---100
+BACKUP Virtual Machine 14---hosted on physical server---100
+BACKUP Virtual Machine 15---hosted on physical server---100
+ Reserved bandwidth for this request --------------
+On link 24 --- Primary Bandwidth: 512---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 25 --- Primary Bandwidth: 512---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 100 --- Primary Bandwidth: 0---Backup Bandwidth: 512---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 512---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 512---Shared Bandwidth: 0
+On link 198 --- Primary Bandwidth: 0---Backup Bandwidth: 512---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 512---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 15 : (N=5, B=299) : has 5 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---101
+PRIMARY Virtual Machine 1---hosted on physical server---101
+PRIMARY Virtual Machine 2---hosted on physical server---101
+PRIMARY Virtual Machine 3---hosted on physical server---101
+PRIMARY Virtual Machine 4---hosted on physical server---101
+BACKUP Virtual Machine 5---hosted on physical server---103
+BACKUP Virtual Machine 6---hosted on physical server---103
+BACKUP Virtual Machine 7---hosted on physical server---103
+BACKUP Virtual Machine 8---hosted on physical server---103
+BACKUP Virtual Machine 9---hosted on physical server---103
+ Reserved bandwidth for this request --------------
+On link 101 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 16 : (N=7, B=414) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---32
+PRIMARY Virtual Machine 1---hosted on physical server---32
+PRIMARY Virtual Machine 2---hosted on physical server---32
+PRIMARY Virtual Machine 3---hosted on physical server---32
+PRIMARY Virtual Machine 4---hosted on physical server---32
+PRIMARY Virtual Machine 5---hosted on physical server---32
+PRIMARY Virtual Machine 6---hosted on physical server---33
+BACKUP Virtual Machine 7---hosted on physical server---33
+BACKUP Virtual Machine 8---hosted on physical server---33
+BACKUP Virtual Machine 9---hosted on physical server---33
+BACKUP Virtual Machine 10---hosted on physical server---33
+BACKUP Virtual Machine 11---hosted on physical server---33
+BACKUP Virtual Machine 12---hosted on physical server---35
+ Reserved bandwidth for this request --------------
+On link 32 --- Primary Bandwidth: 414---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 33 --- Primary Bandwidth: 414---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 35 --- Primary Bandwidth: 0---Backup Bandwidth: 414---Shared Bandwidth: 0
+On link 144 --- Primary Bandwidth: 0---Backup Bandwidth: 414---Shared Bandwidth: 0
+On link 145 --- Primary Bandwidth: 0---Backup Bandwidth: 414---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 17 : (N=9, B=494) : has 2 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---29
+PRIMARY Virtual Machine 1---hosted on physical server---30
+PRIMARY Virtual Machine 2---hosted on physical server---30
+PRIMARY Virtual Machine 3---hosted on physical server---31
+PRIMARY Virtual Machine 4---hosted on physical server---31
+PRIMARY Virtual Machine 5---hosted on physical server---34
+PRIMARY Virtual Machine 6---hosted on physical server---34
+PRIMARY Virtual Machine 7---hosted on physical server---35
+PRIMARY Virtual Machine 8---hosted on physical server---36
+BACKUP Virtual Machine 9---hosted on physical server---38
+BACKUP Virtual Machine 10---hosted on physical server---38
+ Reserved bandwidth for this request --------------
+On link 29 --- Primary Bandwidth: 494---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 30 --- Primary Bandwidth: 988---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 31 --- Primary Bandwidth: 988---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 34 --- Primary Bandwidth: 988---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 35 --- Primary Bandwidth: 494---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 36 --- Primary Bandwidth: 494---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 38 --- Primary Bandwidth: 0---Backup Bandwidth: 988---Shared Bandwidth: 0
+On link 128 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 129 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 130 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 131 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 132 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 133 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 134 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 136 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 137 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 138 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 139 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 141 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 142 --- Primary Bandwidth: 494---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 143 --- Primary Bandwidth: 1976---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 144 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 145 --- Primary Bandwidth: 1482---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 146 --- Primary Bandwidth: 494---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 147 --- Primary Bandwidth: 0---Backup Bandwidth: 988---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 149 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 150 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 151 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 152 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 154 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 155 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 156 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 157 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 158 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 159 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 160 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 161 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 162 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 163 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 164 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 165 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 166 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 168 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 169 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 170 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 172 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 174 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 176 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 177 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 179 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 180 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 181 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 182 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 183 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 184 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 185 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 186 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 187 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 188 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 189 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 190 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 191 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 192 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 193 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 194 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 195 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 196 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 197 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 198 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 199 --- Primary Bandwidth: 1976---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 200 --- Primary Bandwidth: 1482---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 201 --- Primary Bandwidth: 494---Backup Bandwidth: 988---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 203 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 204 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 205 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 206 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 207 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 208 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 209 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 210 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 211 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 212 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 214 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 215 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 216 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 218 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 219 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 220 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 221 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 223 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 18 : (N=7, B=363) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---36
+PRIMARY Virtual Machine 1---hosted on physical server---37
+PRIMARY Virtual Machine 2---hosted on physical server---37
+PRIMARY Virtual Machine 3---hosted on physical server---37
+PRIMARY Virtual Machine 4---hosted on physical server---37
+PRIMARY Virtual Machine 5---hosted on physical server---37
+PRIMARY Virtual Machine 6---hosted on physical server---37
+BACKUP Virtual Machine 7---hosted on physical server---39
+BACKUP Virtual Machine 8---hosted on physical server---39
+BACKUP Virtual Machine 9---hosted on physical server---39
+BACKUP Virtual Machine 10---hosted on physical server---39
+BACKUP Virtual Machine 11---hosted on physical server---39
+BACKUP Virtual Machine 12---hosted on physical server---39
+ Reserved bandwidth for this request --------------
+On link 36 --- Primary Bandwidth: 363---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 37 --- Primary Bandwidth: 363---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 39 --- Primary Bandwidth: 0---Backup Bandwidth: 363---Shared Bandwidth: 0
+On link 146 --- Primary Bandwidth: 0---Backup Bandwidth: 363---Shared Bandwidth: 0
+On link 147 --- Primary Bandwidth: 0---Backup Bandwidth: 363---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 19 : (N=8, B=112) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---42
+PRIMARY Virtual Machine 1---hosted on physical server---42
+PRIMARY Virtual Machine 2---hosted on physical server---42
+PRIMARY Virtual Machine 3---hosted on physical server---42
+PRIMARY Virtual Machine 4---hosted on physical server---42
+PRIMARY Virtual Machine 5---hosted on physical server---42
+PRIMARY Virtual Machine 6---hosted on physical server---43
+PRIMARY Virtual Machine 7---hosted on physical server---43
+BACKUP Virtual Machine 8---hosted on physical server---43
+BACKUP Virtual Machine 9---hosted on physical server---43
+BACKUP Virtual Machine 10---hosted on physical server---43
+BACKUP Virtual Machine 11---hosted on physical server---43
+BACKUP Virtual Machine 12---hosted on physical server---40
+BACKUP Virtual Machine 13---hosted on physical server---40
+ Reserved bandwidth for this request --------------
+On link 40 --- Primary Bandwidth: 0---Backup Bandwidth: 224---Shared Bandwidth: 0
+On link 42 --- Primary Bandwidth: 224---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 43 --- Primary Bandwidth: 224---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 224---Shared Bandwidth: 0
+On link 149 --- Primary Bandwidth: 0---Backup Bandwidth: 224---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 20 : (N=5, B=223) : has 5 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---55
+PRIMARY Virtual Machine 1---hosted on physical server---55
+PRIMARY Virtual Machine 2---hosted on physical server---55
+PRIMARY Virtual Machine 3---hosted on physical server---55
+PRIMARY Virtual Machine 4---hosted on physical server---55
+BACKUP Virtual Machine 5---hosted on physical server---53
+BACKUP Virtual Machine 6---hosted on physical server---53
+BACKUP Virtual Machine 7---hosted on physical server---53
+BACKUP Virtual Machine 8---hosted on physical server---53
+BACKUP Virtual Machine 9---hosted on physical server---53
+ Reserved bandwidth for this request --------------
+On link 55 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 21 : (N=7, B=203) : has 4 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---40
+PRIMARY Virtual Machine 1---hosted on physical server---40
+PRIMARY Virtual Machine 2---hosted on physical server---40
+PRIMARY Virtual Machine 3---hosted on physical server---40
+PRIMARY Virtual Machine 4---hosted on physical server---41
+PRIMARY Virtual Machine 5---hosted on physical server---41
+PRIMARY Virtual Machine 6---hosted on physical server---41
+BACKUP Virtual Machine 7---hosted on physical server---121
+BACKUP Virtual Machine 8---hosted on physical server---121
+BACKUP Virtual Machine 9---hosted on physical server---121
+BACKUP Virtual Machine 10---hosted on physical server---121
+ Reserved bandwidth for this request --------------
+On link 40 --- Primary Bandwidth: 609---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 41 --- Primary Bandwidth: 609---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 121 --- Primary Bandwidth: 0---Backup Bandwidth: 609---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 609---Shared Bandwidth: 0
+On link 188 --- Primary Bandwidth: 0---Backup Bandwidth: 609---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 609---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 609---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 22 : (N=8, B=402) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---46
+PRIMARY Virtual Machine 1---hosted on physical server---46
+PRIMARY Virtual Machine 2---hosted on physical server---46
+PRIMARY Virtual Machine 3---hosted on physical server---46
+PRIMARY Virtual Machine 4---hosted on physical server---46
+PRIMARY Virtual Machine 5---hosted on physical server---46
+PRIMARY Virtual Machine 6---hosted on physical server---47
+PRIMARY Virtual Machine 7---hosted on physical server---47
+BACKUP Virtual Machine 8---hosted on physical server---47
+BACKUP Virtual Machine 9---hosted on physical server---47
+BACKUP Virtual Machine 10---hosted on physical server---47
+BACKUP Virtual Machine 11---hosted on physical server---47
+BACKUP Virtual Machine 12---hosted on physical server---44
+BACKUP Virtual Machine 13---hosted on physical server---44
+ Reserved bandwidth for this request --------------
+On link 44 --- Primary Bandwidth: 0---Backup Bandwidth: 804---Shared Bandwidth: 0
+On link 46 --- Primary Bandwidth: 804---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 47 --- Primary Bandwidth: 804---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 150 --- Primary Bandwidth: 0---Backup Bandwidth: 804---Shared Bandwidth: 0
+On link 151 --- Primary Bandwidth: 0---Backup Bandwidth: 804---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 23 : (N=6, B=435) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---45
+PRIMARY Virtual Machine 1---hosted on physical server---45
+PRIMARY Virtual Machine 2---hosted on physical server---45
+PRIMARY Virtual Machine 3---hosted on physical server---45
+PRIMARY Virtual Machine 4---hosted on physical server---45
+PRIMARY Virtual Machine 5---hosted on physical server---45
+BACKUP Virtual Machine 6---hosted on physical server---65
+BACKUP Virtual Machine 7---hosted on physical server---65
+BACKUP Virtual Machine 8---hosted on physical server---65
+BACKUP Virtual Machine 9---hosted on physical server---65
+BACKUP Virtual Machine 10---hosted on physical server---65
+BACKUP Virtual Machine 11---hosted on physical server---65
+ Reserved bandwidth for this request --------------
+On link 45 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 24 : (N=5, B=396) : has 5 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---120
+PRIMARY Virtual Machine 1---hosted on physical server---120
+PRIMARY Virtual Machine 2---hosted on physical server---120
+PRIMARY Virtual Machine 3---hosted on physical server---120
+PRIMARY Virtual Machine 4---hosted on physical server---120
+BACKUP Virtual Machine 5---hosted on physical server---122
+BACKUP Virtual Machine 6---hosted on physical server---122
+BACKUP Virtual Machine 7---hosted on physical server---122
+BACKUP Virtual Machine 8---hosted on physical server---122
+BACKUP Virtual Machine 9---hosted on physical server---122
+ Reserved bandwidth for this request --------------
+On link 120 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 25 : (N=8, B=236) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---48
+PRIMARY Virtual Machine 1---hosted on physical server---48
+PRIMARY Virtual Machine 2---hosted on physical server---48
+PRIMARY Virtual Machine 3---hosted on physical server---48
+PRIMARY Virtual Machine 4---hosted on physical server---48
+PRIMARY Virtual Machine 5---hosted on physical server---48
+PRIMARY Virtual Machine 6---hosted on physical server---49
+PRIMARY Virtual Machine 7---hosted on physical server---49
+BACKUP Virtual Machine 8---hosted on physical server---49
+BACKUP Virtual Machine 9---hosted on physical server---49
+BACKUP Virtual Machine 10---hosted on physical server---49
+BACKUP Virtual Machine 11---hosted on physical server---49
+BACKUP Virtual Machine 12---hosted on physical server---51
+BACKUP Virtual Machine 13---hosted on physical server---51
+ Reserved bandwidth for this request --------------
+On link 48 --- Primary Bandwidth: 472---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 49 --- Primary Bandwidth: 472---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 51 --- Primary Bandwidth: 0---Backup Bandwidth: 472---Shared Bandwidth: 0
+On link 152 --- Primary Bandwidth: 0---Backup Bandwidth: 472---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 472---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 26 : (N=7, B=105) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---50
+PRIMARY Virtual Machine 1---hosted on physical server---50
+PRIMARY Virtual Machine 2---hosted on physical server---50
+PRIMARY Virtual Machine 3---hosted on physical server---50
+PRIMARY Virtual Machine 4---hosted on physical server---50
+PRIMARY Virtual Machine 5---hosted on physical server---50
+PRIMARY Virtual Machine 6---hosted on physical server---51
+BACKUP Virtual Machine 7---hosted on physical server---51
+BACKUP Virtual Machine 8---hosted on physical server---51
+BACKUP Virtual Machine 9---hosted on physical server---51
+BACKUP Virtual Machine 10---hosted on physical server---55
+BACKUP Virtual Machine 11---hosted on physical server---122
+BACKUP Virtual Machine 12---hosted on physical server---94
+ Reserved bandwidth for this request --------------
+On link 50 --- Primary Bandwidth: 105---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 51 --- Primary Bandwidth: 105---Backup Bandwidth: 210---Shared Bandwidth: 0
+On link 55 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 94 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 122 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 315---Shared Bandwidth: 0
+On link 155 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 189 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 204 --- Primary Bandwidth: 0---Backup Bandwidth: 315---Shared Bandwidth: 0
+On link 205 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 215 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 105---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 27 : (N=6, B=163) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---123
+PRIMARY Virtual Machine 1---hosted on physical server---123
+PRIMARY Virtual Machine 2---hosted on physical server---123
+PRIMARY Virtual Machine 3---hosted on physical server---123
+PRIMARY Virtual Machine 4---hosted on physical server---123
+PRIMARY Virtual Machine 5---hosted on physical server---123
+BACKUP Virtual Machine 6---hosted on physical server---98
+BACKUP Virtual Machine 7---hosted on physical server---98
+BACKUP Virtual Machine 8---hosted on physical server---98
+BACKUP Virtual Machine 9---hosted on physical server---98
+BACKUP Virtual Machine 10---hosted on physical server---98
+BACKUP Virtual Machine 11---hosted on physical server---98
+ Reserved bandwidth for this request --------------
+On link 123 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 28 : (N=8, B=326) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---94
+PRIMARY Virtual Machine 1---hosted on physical server---94
+PRIMARY Virtual Machine 2---hosted on physical server---95
+PRIMARY Virtual Machine 3---hosted on physical server---95
+PRIMARY Virtual Machine 4---hosted on physical server---95
+PRIMARY Virtual Machine 5---hosted on physical server---95
+PRIMARY Virtual Machine 6---hosted on physical server---95
+PRIMARY Virtual Machine 7---hosted on physical server---95
+BACKUP Virtual Machine 8---hosted on physical server---92
+BACKUP Virtual Machine 9---hosted on physical server---92
+BACKUP Virtual Machine 10---hosted on physical server---92
+BACKUP Virtual Machine 11---hosted on physical server---92
+BACKUP Virtual Machine 12---hosted on physical server---92
+BACKUP Virtual Machine 13---hosted on physical server---92
+ Reserved bandwidth for this request --------------
+On link 92 --- Primary Bandwidth: 0---Backup Bandwidth: 652---Shared Bandwidth: 0
+On link 94 --- Primary Bandwidth: 652---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 95 --- Primary Bandwidth: 652---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 174 --- Primary Bandwidth: 0---Backup Bandwidth: 652---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 652---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 29 : (N=6, B=465) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---93
+PRIMARY Virtual Machine 1---hosted on physical server---93
+PRIMARY Virtual Machine 2---hosted on physical server---93
+PRIMARY Virtual Machine 3---hosted on physical server---93
+PRIMARY Virtual Machine 4---hosted on physical server---93
+PRIMARY Virtual Machine 5---hosted on physical server---93
+BACKUP Virtual Machine 6---hosted on physical server---56
+BACKUP Virtual Machine 7---hosted on physical server---56
+BACKUP Virtual Machine 8---hosted on physical server---56
+BACKUP Virtual Machine 9---hosted on physical server---56
+BACKUP Virtual Machine 10---hosted on physical server---56
+BACKUP Virtual Machine 11---hosted on physical server---56
+ Reserved bandwidth for this request --------------
+On link 93 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 30 : (N=9, B=220) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---58
+PRIMARY Virtual Machine 1---hosted on physical server---58
+PRIMARY Virtual Machine 2---hosted on physical server---58
+PRIMARY Virtual Machine 3---hosted on physical server---58
+PRIMARY Virtual Machine 4---hosted on physical server---58
+PRIMARY Virtual Machine 5---hosted on physical server---58
+PRIMARY Virtual Machine 6---hosted on physical server---59
+PRIMARY Virtual Machine 7---hosted on physical server---59
+PRIMARY Virtual Machine 8---hosted on physical server---59
+BACKUP Virtual Machine 9---hosted on physical server---59
+BACKUP Virtual Machine 10---hosted on physical server---59
+BACKUP Virtual Machine 11---hosted on physical server---59
+BACKUP Virtual Machine 12---hosted on physical server---57
+BACKUP Virtual Machine 13---hosted on physical server---57
+BACKUP Virtual Machine 14---hosted on physical server---57
+ Reserved bandwidth for this request --------------
+On link 57 --- Primary Bandwidth: 0---Backup Bandwidth: 660---Shared Bandwidth: 0
+On link 58 --- Primary Bandwidth: 660---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 59 --- Primary Bandwidth: 660---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 156 --- Primary Bandwidth: 0---Backup Bandwidth: 660---Shared Bandwidth: 0
+On link 157 --- Primary Bandwidth: 0---Backup Bandwidth: 660---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 31 : (N=6, B=409) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---52
+PRIMARY Virtual Machine 1---hosted on physical server---52
+PRIMARY Virtual Machine 2---hosted on physical server---52
+PRIMARY Virtual Machine 3---hosted on physical server---52
+PRIMARY Virtual Machine 4---hosted on physical server---52
+PRIMARY Virtual Machine 5---hosted on physical server---52
+BACKUP Virtual Machine 6---hosted on physical server---126
+BACKUP Virtual Machine 7---hosted on physical server---126
+BACKUP Virtual Machine 8---hosted on physical server---126
+BACKUP Virtual Machine 9---hosted on physical server---126
+BACKUP Virtual Machine 10---hosted on physical server---126
+BACKUP Virtual Machine 11---hosted on physical server---126
+ Reserved bandwidth for this request --------------
+On link 52 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 32 : (N=8, B=325) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---60
+PRIMARY Virtual Machine 1---hosted on physical server---60
+PRIMARY Virtual Machine 2---hosted on physical server---60
+PRIMARY Virtual Machine 3---hosted on physical server---60
+PRIMARY Virtual Machine 4---hosted on physical server---60
+PRIMARY Virtual Machine 5---hosted on physical server---60
+PRIMARY Virtual Machine 6---hosted on physical server---61
+PRIMARY Virtual Machine 7---hosted on physical server---61
+BACKUP Virtual Machine 8---hosted on physical server---61
+BACKUP Virtual Machine 9---hosted on physical server---61
+BACKUP Virtual Machine 10---hosted on physical server---61
+BACKUP Virtual Machine 11---hosted on physical server---61
+BACKUP Virtual Machine 12---hosted on physical server---62
+BACKUP Virtual Machine 13---hosted on physical server---62
+ Reserved bandwidth for this request --------------
+On link 60 --- Primary Bandwidth: 650---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 61 --- Primary Bandwidth: 650---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 62 --- Primary Bandwidth: 0---Backup Bandwidth: 650---Shared Bandwidth: 0
+On link 158 --- Primary Bandwidth: 0---Backup Bandwidth: 650---Shared Bandwidth: 0
+On link 159 --- Primary Bandwidth: 0---Backup Bandwidth: 650---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 33 : (N=6, B=405) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---63
+PRIMARY Virtual Machine 1---hosted on physical server---63
+PRIMARY Virtual Machine 2---hosted on physical server---63
+PRIMARY Virtual Machine 3---hosted on physical server---63
+PRIMARY Virtual Machine 4---hosted on physical server---63
+PRIMARY Virtual Machine 5---hosted on physical server---63
+BACKUP Virtual Machine 6---hosted on physical server---112
+BACKUP Virtual Machine 7---hosted on physical server---112
+BACKUP Virtual Machine 8---hosted on physical server---112
+BACKUP Virtual Machine 9---hosted on physical server---112
+BACKUP Virtual Machine 10---hosted on physical server---112
+BACKUP Virtual Machine 11---hosted on physical server---112
+ Reserved bandwidth for this request --------------
+On link 63 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 34 : (N=6, B=495) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---64
+PRIMARY Virtual Machine 1---hosted on physical server---64
+PRIMARY Virtual Machine 2---hosted on physical server---64
+PRIMARY Virtual Machine 3---hosted on physical server---64
+PRIMARY Virtual Machine 4---hosted on physical server---64
+PRIMARY Virtual Machine 5---hosted on physical server---64
+BACKUP Virtual Machine 6---hosted on physical server---67
+BACKUP Virtual Machine 7---hosted on physical server---67
+BACKUP Virtual Machine 8---hosted on physical server---67
+BACKUP Virtual Machine 9---hosted on physical server---67
+BACKUP Virtual Machine 10---hosted on physical server---67
+BACKUP Virtual Machine 11---hosted on physical server---67
+ Reserved bandwidth for this request --------------
+On link 64 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 35 : (N=8, B=467) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---68
+PRIMARY Virtual Machine 1---hosted on physical server---68
+PRIMARY Virtual Machine 2---hosted on physical server---68
+PRIMARY Virtual Machine 3---hosted on physical server---68
+PRIMARY Virtual Machine 4---hosted on physical server---68
+PRIMARY Virtual Machine 5---hosted on physical server---68
+PRIMARY Virtual Machine 6---hosted on physical server---69
+PRIMARY Virtual Machine 7---hosted on physical server---69
+BACKUP Virtual Machine 8---hosted on physical server---69
+BACKUP Virtual Machine 9---hosted on physical server---69
+BACKUP Virtual Machine 10---hosted on physical server---69
+BACKUP Virtual Machine 11---hosted on physical server---69
+BACKUP Virtual Machine 12---hosted on physical server---70
+BACKUP Virtual Machine 13---hosted on physical server---70
+ Reserved bandwidth for this request --------------
+On link 68 --- Primary Bandwidth: 934---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 69 --- Primary Bandwidth: 934---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 70 --- Primary Bandwidth: 0---Backup Bandwidth: 934---Shared Bandwidth: 0
+On link 162 --- Primary Bandwidth: 0---Backup Bandwidth: 934---Shared Bandwidth: 0
+On link 163 --- Primary Bandwidth: 0---Backup Bandwidth: 934---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 36 : (N=8, B=459) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---72
+PRIMARY Virtual Machine 1---hosted on physical server---72
+PRIMARY Virtual Machine 2---hosted on physical server---72
+PRIMARY Virtual Machine 3---hosted on physical server---72
+PRIMARY Virtual Machine 4---hosted on physical server---72
+PRIMARY Virtual Machine 5---hosted on physical server---72
+PRIMARY Virtual Machine 6---hosted on physical server---73
+PRIMARY Virtual Machine 7---hosted on physical server---73
+BACKUP Virtual Machine 8---hosted on physical server---73
+BACKUP Virtual Machine 9---hosted on physical server---73
+BACKUP Virtual Machine 10---hosted on physical server---73
+BACKUP Virtual Machine 11---hosted on physical server---73
+BACKUP Virtual Machine 12---hosted on physical server---75
+BACKUP Virtual Machine 13---hosted on physical server---75
+ Reserved bandwidth for this request --------------
+On link 72 --- Primary Bandwidth: 918---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 73 --- Primary Bandwidth: 918---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 75 --- Primary Bandwidth: 0---Backup Bandwidth: 918---Shared Bandwidth: 0
+On link 164 --- Primary Bandwidth: 0---Backup Bandwidth: 918---Shared Bandwidth: 0
+On link 165 --- Primary Bandwidth: 0---Backup Bandwidth: 918---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 37 : (N=8, B=255) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---76
+PRIMARY Virtual Machine 1---hosted on physical server---76
+PRIMARY Virtual Machine 2---hosted on physical server---76
+PRIMARY Virtual Machine 3---hosted on physical server---76
+PRIMARY Virtual Machine 4---hosted on physical server---76
+PRIMARY Virtual Machine 5---hosted on physical server---76
+PRIMARY Virtual Machine 6---hosted on physical server---77
+PRIMARY Virtual Machine 7---hosted on physical server---77
+BACKUP Virtual Machine 8---hosted on physical server---77
+BACKUP Virtual Machine 9---hosted on physical server---77
+BACKUP Virtual Machine 10---hosted on physical server---77
+BACKUP Virtual Machine 11---hosted on physical server---77
+BACKUP Virtual Machine 12---hosted on physical server---78
+BACKUP Virtual Machine 13---hosted on physical server---78
+ Reserved bandwidth for this request --------------
+On link 76 --- Primary Bandwidth: 510---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 77 --- Primary Bandwidth: 510---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 78 --- Primary Bandwidth: 0---Backup Bandwidth: 510---Shared Bandwidth: 0
+On link 166 --- Primary Bandwidth: 0---Backup Bandwidth: 510---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 0---Backup Bandwidth: 510---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 38 : (N=10, B=101) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 39 : (N=6, B=264) : has 5 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---78
+PRIMARY Virtual Machine 1---hosted on physical server---79
+PRIMARY Virtual Machine 2---hosted on physical server---79
+PRIMARY Virtual Machine 3---hosted on physical server---79
+PRIMARY Virtual Machine 4---hosted on physical server---79
+PRIMARY Virtual Machine 5---hosted on physical server---79
+BACKUP Virtual Machine 6---hosted on physical server---86
+BACKUP Virtual Machine 7---hosted on physical server---86
+BACKUP Virtual Machine 8---hosted on physical server---86
+BACKUP Virtual Machine 9---hosted on physical server---86
+BACKUP Virtual Machine 10---hosted on physical server---86
+ Reserved bandwidth for this request --------------
+On link 78 --- Primary Bandwidth: 264---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 79 --- Primary Bandwidth: 264---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 86 --- Primary Bandwidth: 0---Backup Bandwidth: 264---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 0---Backup Bandwidth: 264---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 264---Shared Bandwidth: 0
+On link 211 --- Primary Bandwidth: 0---Backup Bandwidth: 264---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 0---Backup Bandwidth: 264---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 40 : (N=9, B=466) : has 2 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---53
+PRIMARY Virtual Machine 1---hosted on physical server---66
+PRIMARY Virtual Machine 2---hosted on physical server---66
+PRIMARY Virtual Machine 3---hosted on physical server---71
+PRIMARY Virtual Machine 4---hosted on physical server---71
+PRIMARY Virtual Machine 5---hosted on physical server---79
+PRIMARY Virtual Machine 6---hosted on physical server---83
+PRIMARY Virtual Machine 7---hosted on physical server---83
+PRIMARY Virtual Machine 8---hosted on physical server---84
+BACKUP Virtual Machine 9---hosted on physical server---84
+BACKUP Virtual Machine 10---hosted on physical server---99
+ Reserved bandwidth for this request --------------
+On link 53 --- Primary Bandwidth: 466---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 66 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 71 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 79 --- Primary Bandwidth: 466---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 83 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 84 --- Primary Bandwidth: 466---Backup Bandwidth: 466---Shared Bandwidth: 0
+On link 99 --- Primary Bandwidth: 0---Backup Bandwidth: 466---Shared Bandwidth: 0
+On link 128 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 129 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 130 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 131 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 132 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 133 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 134 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 136 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 137 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 138 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 139 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 141 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 142 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 143 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 144 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 145 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 146 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 147 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 149 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 150 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 151 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 152 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 154 --- Primary Bandwidth: 466---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 155 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 156 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 157 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 158 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 159 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 160 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 161 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 162 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 163 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 164 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 165 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 166 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 466---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 168 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 169 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 170 --- Primary Bandwidth: 466---Backup Bandwidth: 466---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 172 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 174 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 176 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 177 --- Primary Bandwidth: 0---Backup Bandwidth: 466---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 179 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 180 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 181 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 182 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 183 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 184 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 185 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 186 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 187 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 188 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 189 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 190 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 191 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 192 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 193 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 194 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 195 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 196 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 197 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 198 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 199 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 200 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 201 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 203 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 204 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 205 --- Primary Bandwidth: 466---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 206 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 207 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 208 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 209 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 210 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 211 --- Primary Bandwidth: 466---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 212 --- Primary Bandwidth: 932---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 466---Backup Bandwidth: 466---Shared Bandwidth: 0
+On link 214 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 215 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 216 --- Primary Bandwidth: 0---Backup Bandwidth: 466---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 218 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 219 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 220 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 221 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 223 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 41 : (N=7, B=395) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---86
+PRIMARY Virtual Machine 1---hosted on physical server---87
+PRIMARY Virtual Machine 2---hosted on physical server---87
+PRIMARY Virtual Machine 3---hosted on physical server---87
+PRIMARY Virtual Machine 4---hosted on physical server---87
+PRIMARY Virtual Machine 5---hosted on physical server---87
+PRIMARY Virtual Machine 6---hosted on physical server---87
+BACKUP Virtual Machine 7---hosted on physical server---111
+BACKUP Virtual Machine 8---hosted on physical server---111
+BACKUP Virtual Machine 9---hosted on physical server---111
+BACKUP Virtual Machine 10---hosted on physical server---111
+BACKUP Virtual Machine 11---hosted on physical server---111
+BACKUP Virtual Machine 12---hosted on physical server---111
+ Reserved bandwidth for this request --------------
+On link 86 --- Primary Bandwidth: 395---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 87 --- Primary Bandwidth: 395---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 111 --- Primary Bandwidth: 0---Backup Bandwidth: 395---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 395---Shared Bandwidth: 0
+On link 183 --- Primary Bandwidth: 0---Backup Bandwidth: 395---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 0---Backup Bandwidth: 395---Shared Bandwidth: 0
+On link 219 --- Primary Bandwidth: 0---Backup Bandwidth: 395---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 42 : (N=6, B=130) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---110
+PRIMARY Virtual Machine 1---hosted on physical server---110
+PRIMARY Virtual Machine 2---hosted on physical server---110
+PRIMARY Virtual Machine 3---hosted on physical server---110
+PRIMARY Virtual Machine 4---hosted on physical server---110
+PRIMARY Virtual Machine 5---hosted on physical server---110
+BACKUP Virtual Machine 6---hosted on physical server---109
+BACKUP Virtual Machine 7---hosted on physical server---109
+BACKUP Virtual Machine 8---hosted on physical server---109
+BACKUP Virtual Machine 9---hosted on physical server---109
+BACKUP Virtual Machine 10---hosted on physical server---109
+BACKUP Virtual Machine 11---hosted on physical server---109
+ Reserved bandwidth for this request --------------
+On link 110 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 43 : (N=8, B=226) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---88
+PRIMARY Virtual Machine 1---hosted on physical server---88
+PRIMARY Virtual Machine 2---hosted on physical server---88
+PRIMARY Virtual Machine 3---hosted on physical server---88
+PRIMARY Virtual Machine 4---hosted on physical server---88
+PRIMARY Virtual Machine 5---hosted on physical server---88
+PRIMARY Virtual Machine 6---hosted on physical server---89
+PRIMARY Virtual Machine 7---hosted on physical server---89
+BACKUP Virtual Machine 8---hosted on physical server---89
+BACKUP Virtual Machine 9---hosted on physical server---89
+BACKUP Virtual Machine 10---hosted on physical server---89
+BACKUP Virtual Machine 11---hosted on physical server---89
+BACKUP Virtual Machine 12---hosted on physical server---91
+BACKUP Virtual Machine 13---hosted on physical server---91
+ Reserved bandwidth for this request --------------
+On link 88 --- Primary Bandwidth: 452---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 89 --- Primary Bandwidth: 452---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 91 --- Primary Bandwidth: 0---Backup Bandwidth: 452---Shared Bandwidth: 0
+On link 172 --- Primary Bandwidth: 0---Backup Bandwidth: 452---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 452---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 44 : (N=7, B=372) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---90
+PRIMARY Virtual Machine 1---hosted on physical server---90
+PRIMARY Virtual Machine 2---hosted on physical server---90
+PRIMARY Virtual Machine 3---hosted on physical server---90
+PRIMARY Virtual Machine 4---hosted on physical server---90
+PRIMARY Virtual Machine 5---hosted on physical server---90
+PRIMARY Virtual Machine 6---hosted on physical server---91
+BACKUP Virtual Machine 7---hosted on physical server---127
+BACKUP Virtual Machine 8---hosted on physical server---127
+BACKUP Virtual Machine 9---hosted on physical server---127
+BACKUP Virtual Machine 10---hosted on physical server---127
+BACKUP Virtual Machine 11---hosted on physical server---127
+BACKUP Virtual Machine 12---hosted on physical server---127
+ Reserved bandwidth for this request --------------
+On link 90 --- Primary Bandwidth: 372---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 91 --- Primary Bandwidth: 372---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 127 --- Primary Bandwidth: 0---Backup Bandwidth: 372---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 372---Shared Bandwidth: 0
+On link 191 --- Primary Bandwidth: 0---Backup Bandwidth: 372---Shared Bandwidth: 0
+On link 214 --- Primary Bandwidth: 0---Backup Bandwidth: 372---Shared Bandwidth: 0
+On link 223 --- Primary Bandwidth: 0---Backup Bandwidth: 372---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 45 : (N=7, B=441) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 46 : (N=9, B=128) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---96
+PRIMARY Virtual Machine 1---hosted on physical server---96
+PRIMARY Virtual Machine 2---hosted on physical server---96
+PRIMARY Virtual Machine 3---hosted on physical server---96
+PRIMARY Virtual Machine 4---hosted on physical server---96
+PRIMARY Virtual Machine 5---hosted on physical server---96
+PRIMARY Virtual Machine 6---hosted on physical server---97
+PRIMARY Virtual Machine 7---hosted on physical server---97
+PRIMARY Virtual Machine 8---hosted on physical server---97
+BACKUP Virtual Machine 9---hosted on physical server---97
+BACKUP Virtual Machine 10---hosted on physical server---97
+BACKUP Virtual Machine 11---hosted on physical server---97
+BACKUP Virtual Machine 12---hosted on physical server---99
+BACKUP Virtual Machine 13---hosted on physical server---99
+BACKUP Virtual Machine 14---hosted on physical server---99
+ Reserved bandwidth for this request --------------
+On link 96 --- Primary Bandwidth: 384---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 97 --- Primary Bandwidth: 384---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 99 --- Primary Bandwidth: 0---Backup Bandwidth: 384---Shared Bandwidth: 0
+On link 176 --- Primary Bandwidth: 0---Backup Bandwidth: 384---Shared Bandwidth: 0
+On link 177 --- Primary Bandwidth: 0---Backup Bandwidth: 384---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 47 : (N=7, B=167) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---102
+PRIMARY Virtual Machine 1---hosted on physical server---102
+PRIMARY Virtual Machine 2---hosted on physical server---102
+PRIMARY Virtual Machine 3---hosted on physical server---102
+PRIMARY Virtual Machine 4---hosted on physical server---102
+PRIMARY Virtual Machine 5---hosted on physical server---102
+PRIMARY Virtual Machine 6---hosted on physical server---103
+BACKUP Virtual Machine 7---hosted on physical server---101
+BACKUP Virtual Machine 8---hosted on physical server---115
+BACKUP Virtual Machine 9---hosted on physical server---115
+BACKUP Virtual Machine 10---hosted on physical server---115
+BACKUP Virtual Machine 11---hosted on physical server---115
+BACKUP Virtual Machine 12---hosted on physical server---115
+ Reserved bandwidth for this request --------------
+On link 101 --- Primary Bandwidth: 0---Backup Bandwidth: 167---Shared Bandwidth: 0
+On link 102 --- Primary Bandwidth: 167---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 103 --- Primary Bandwidth: 167---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 115 --- Primary Bandwidth: 0---Backup Bandwidth: 334---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 167---Shared Bandwidth: 0
+On link 179 --- Primary Bandwidth: 0---Backup Bandwidth: 167---Shared Bandwidth: 0
+On link 185 --- Primary Bandwidth: 0---Backup Bandwidth: 334---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 334---Shared Bandwidth: 0
+On link 220 --- Primary Bandwidth: 0---Backup Bandwidth: 334---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 48 : (N=6, B=120) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---114
+PRIMARY Virtual Machine 1---hosted on physical server---114
+PRIMARY Virtual Machine 2---hosted on physical server---114
+PRIMARY Virtual Machine 3---hosted on physical server---114
+PRIMARY Virtual Machine 4---hosted on physical server---114
+PRIMARY Virtual Machine 5---hosted on physical server---114
+BACKUP Virtual Machine 6---hosted on physical server---113
+BACKUP Virtual Machine 7---hosted on physical server---113
+BACKUP Virtual Machine 8---hosted on physical server---113
+BACKUP Virtual Machine 9---hosted on physical server---113
+BACKUP Virtual Machine 10---hosted on physical server---113
+BACKUP Virtual Machine 11---hosted on physical server---113
+ Reserved bandwidth for this request --------------
+On link 114 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 49 : (N=6, B=429) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---104
+PRIMARY Virtual Machine 1---hosted on physical server---104
+PRIMARY Virtual Machine 2---hosted on physical server---104
+PRIMARY Virtual Machine 3---hosted on physical server---104
+PRIMARY Virtual Machine 4---hosted on physical server---104
+PRIMARY Virtual Machine 5---hosted on physical server---104
+BACKUP Virtual Machine 6---hosted on physical server---105
+BACKUP Virtual Machine 7---hosted on physical server---105
+BACKUP Virtual Machine 8---hosted on physical server---105
+BACKUP Virtual Machine 9---hosted on physical server---105
+BACKUP Virtual Machine 10---hosted on physical server---105
+BACKUP Virtual Machine 11---hosted on physical server---105
+ Reserved bandwidth for this request --------------
+On link 104 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 50 : (N=10, B=411) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 51 : (N=5, B=171) : has 4 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---2
+PRIMARY Virtual Machine 1---hosted on physical server---2
+PRIMARY Virtual Machine 2---hosted on physical server---2
+PRIMARY Virtual Machine 3---hosted on physical server---2
+PRIMARY Virtual Machine 4---hosted on physical server---3
+BACKUP Virtual Machine 5---hosted on physical server---3
+BACKUP Virtual Machine 6---hosted on physical server---3
+BACKUP Virtual Machine 7---hosted on physical server---3
+BACKUP Virtual Machine 8---hosted on physical server---0
+ Reserved bandwidth for this request --------------
+On link 0 --- Primary Bandwidth: 0---Backup Bandwidth: 171---Shared Bandwidth: 0
+On link 2 --- Primary Bandwidth: 171---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 3 --- Primary Bandwidth: 171---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 128 --- Primary Bandwidth: 0---Backup Bandwidth: 171---Shared Bandwidth: 0
+On link 129 --- Primary Bandwidth: 0---Backup Bandwidth: 171---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 52 : (N=9, B=338) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 53 : (N=9, B=481) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 54 : (N=9, B=100) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---106
+PRIMARY Virtual Machine 1---hosted on physical server---106
+PRIMARY Virtual Machine 2---hosted on physical server---106
+PRIMARY Virtual Machine 3---hosted on physical server---106
+PRIMARY Virtual Machine 4---hosted on physical server---106
+PRIMARY Virtual Machine 5---hosted on physical server---106
+PRIMARY Virtual Machine 6---hosted on physical server---107
+PRIMARY Virtual Machine 7---hosted on physical server---107
+PRIMARY Virtual Machine 8---hosted on physical server---107
+BACKUP Virtual Machine 9---hosted on physical server---107
+BACKUP Virtual Machine 10---hosted on physical server---107
+BACKUP Virtual Machine 11---hosted on physical server---107
+BACKUP Virtual Machine 12---hosted on physical server---41
+BACKUP Virtual Machine 13---hosted on physical server---41
+BACKUP Virtual Machine 14---hosted on physical server---41
+ Reserved bandwidth for this request --------------
+On link 41 --- Primary Bandwidth: 0---Backup Bandwidth: 300---Shared Bandwidth: 0
+On link 106 --- Primary Bandwidth: 300---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 107 --- Primary Bandwidth: 300---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 300---Shared Bandwidth: 0
+On link 181 --- Primary Bandwidth: 0---Backup Bandwidth: 300---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 300---Shared Bandwidth: 0
+On link 218 --- Primary Bandwidth: 0---Backup Bandwidth: 300---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 55 : (N=7, B=169) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---118
+PRIMARY Virtual Machine 1---hosted on physical server---118
+PRIMARY Virtual Machine 2---hosted on physical server---118
+PRIMARY Virtual Machine 3---hosted on physical server---118
+PRIMARY Virtual Machine 4---hosted on physical server---118
+PRIMARY Virtual Machine 5---hosted on physical server---118
+PRIMARY Virtual Machine 6---hosted on physical server---119
+BACKUP Virtual Machine 7---hosted on physical server---119
+BACKUP Virtual Machine 8---hosted on physical server---119
+BACKUP Virtual Machine 9---hosted on physical server---119
+BACKUP Virtual Machine 10---hosted on physical server---119
+BACKUP Virtual Machine 11---hosted on physical server---119
+BACKUP Virtual Machine 12---hosted on physical server---116
+ Reserved bandwidth for this request --------------
+On link 116 --- Primary Bandwidth: 0---Backup Bandwidth: 169---Shared Bandwidth: 0
+On link 118 --- Primary Bandwidth: 169---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 119 --- Primary Bandwidth: 169---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 186 --- Primary Bandwidth: 0---Backup Bandwidth: 169---Shared Bandwidth: 0
+On link 187 --- Primary Bandwidth: 0---Backup Bandwidth: 169---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 56 : (N=8, B=336) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 57 : (N=8, B=444) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 58 : (N=10, B=348) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 59 : (N=9, B=351) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 60 : (N=6, B=391) : has 6 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---108
+PRIMARY Virtual Machine 1---hosted on physical server---108
+PRIMARY Virtual Machine 2---hosted on physical server---108
+PRIMARY Virtual Machine 3---hosted on physical server---108
+PRIMARY Virtual Machine 4---hosted on physical server---108
+PRIMARY Virtual Machine 5---hosted on physical server---108
+BACKUP Virtual Machine 6---hosted on physical server---125
+BACKUP Virtual Machine 7---hosted on physical server---125
+BACKUP Virtual Machine 8---hosted on physical server---125
+BACKUP Virtual Machine 9---hosted on physical server---125
+BACKUP Virtual Machine 10---hosted on physical server---125
+BACKUP Virtual Machine 11---hosted on physical server---125
+ Reserved bandwidth for this request --------------
+On link 108 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 61 : (N=9, B=161) : has 1 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---1
+PRIMARY Virtual Machine 1---hosted on physical server---4
+PRIMARY Virtual Machine 2---hosted on physical server---6
+PRIMARY Virtual Machine 3---hosted on physical server---15
+PRIMARY Virtual Machine 4---hosted on physical server---19
+PRIMARY Virtual Machine 5---hosted on physical server---20
+PRIMARY Virtual Machine 6---hosted on physical server---21
+PRIMARY Virtual Machine 7---hosted on physical server---22
+PRIMARY Virtual Machine 8---hosted on physical server---44
+BACKUP Virtual Machine 9---hosted on physical server---54
+ Reserved bandwidth for this request --------------
+On link 1 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 4 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 6 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 15 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 19 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 20 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 21 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 22 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 44 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 54 --- Primary Bandwidth: 0---Backup Bandwidth: 161---Shared Bandwidth: 0
+On link 128 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 129 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 130 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 131 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 132 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 133 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 134 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 135 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 136 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 137 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 138 --- Primary Bandwidth: 322---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 139 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 140 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 141 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 142 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 143 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 144 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 145 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 146 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 147 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 148 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 149 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 150 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 151 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 152 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 153 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 154 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 155 --- Primary Bandwidth: 0---Backup Bandwidth: 161---Shared Bandwidth: 0
+On link 156 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 157 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 158 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 159 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 160 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 161 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 162 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 163 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 164 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 165 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 166 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 167 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 168 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 169 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 170 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 171 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 172 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 173 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 174 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 175 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 176 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 177 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 178 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 179 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 180 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 181 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 182 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 183 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 184 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 185 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 186 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 187 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 188 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 189 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 190 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 191 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 192 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 193 --- Primary Bandwidth: 322---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 194 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 195 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 196 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 197 --- Primary Bandwidth: 483---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 198 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 199 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 200 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 201 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 202 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 203 --- Primary Bandwidth: 161---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 204 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 205 --- Primary Bandwidth: 0---Backup Bandwidth: 161---Shared Bandwidth: 0
+On link 206 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 207 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 208 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 209 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 210 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 211 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 212 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 213 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 214 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 215 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 216 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 217 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 218 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 219 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 220 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 221 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 222 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+On link 223 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 62 : (N=5, B=368) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 63 : (N=6, B=452) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 64 : (N=5, B=367) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 65 : (N=5, B=377) : has 5 backups : admitted =true Process Type :ARRIVAL ------------- 
+ Reserved VMs --------------
+PRIMARY Virtual Machine 0---hosted on physical server---116
+PRIMARY Virtual Machine 1---hosted on physical server---116
+PRIMARY Virtual Machine 2---hosted on physical server---116
+PRIMARY Virtual Machine 3---hosted on physical server---116
+PRIMARY Virtual Machine 4---hosted on physical server---116
+BACKUP Virtual Machine 5---hosted on physical server---124
+BACKUP Virtual Machine 6---hosted on physical server---124
+BACKUP Virtual Machine 7---hosted on physical server---124
+BACKUP Virtual Machine 8---hosted on physical server---124
+BACKUP Virtual Machine 9---hosted on physical server---124
+ Reserved bandwidth for this request --------------
+On link 116 --- Primary Bandwidth: 0---Backup Bandwidth: 0---Shared Bandwidth: 0
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 66 : (N=9, B=454) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 67 : (N=6, B=231) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 68 : (N=10, B=409) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 69 : (N=6, B=417) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 70 : (N=5, B=444) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 71 : (N=8, B=310) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 72 : (N=7, B=189) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 73 : (N=9, B=113) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 74 : (N=10, B=278) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 75 : (N=8, B=472) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 76 : (N=8, B=324) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 77 : (N=8, B=427) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 78 : (N=6, B=158) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 79 : (N=8, B=476) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 80 : (N=6, B=461) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 81 : (N=8, B=480) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 82 : (N=10, B=141) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 83 : (N=8, B=263) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 84 : (N=5, B=360) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 85 : (N=6, B=400) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 86 : (N=8, B=221) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 87 : (N=9, B=461) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 88 : (N=6, B=310) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 89 : (N=6, B=466) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 90 : (N=10, B=407) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 91 : (N=6, B=141) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 92 : (N=8, B=241) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 93 : (N=10, B=331) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 94 : (N=6, B=206) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 95 : (N=5, B=348) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: BACKUP_MAPPING_BANDWIDTH ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 96 : (N=5, B=485) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 97 : (N=8, B=397) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 98 : (N=6, B=395) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  
+--------------Request 99 : (N=10, B=446) : has 0 backups : admitted =false Process Type :ARRIVAL ------------- 
+ Rejection Reasons: PRIMARY_EMBEDDING ----
+ Reserved VMs --------------
+ Reserved bandwidth for this request --------------
+ Sharing Sets of the request --------------
+
+
+  ---------------------------------------------------------------------- Fat tree network of ------------------------------------------------------------------------------ 
+ ----128 Servers----6 VM per server----
+ ----2 Servers per TOR switch (64 TOR)----
+ ----2 of TOR switch per Aggregate (32 Aggregate)----
+ ----32 Aggregate per core (1 core )----
+ Links capacity : server-TOR = 1000 | TOR-AGG =  10000 | AGG-Core = 10000 ----
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

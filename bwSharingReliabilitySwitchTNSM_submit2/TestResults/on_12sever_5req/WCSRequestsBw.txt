@@ -1,0 +1,7 @@
+
+
+====Reserved bandwidth for admitted requests  by WCS () ====
+====LOAD: 2 SET NB: 0====
+18
+30
+15
