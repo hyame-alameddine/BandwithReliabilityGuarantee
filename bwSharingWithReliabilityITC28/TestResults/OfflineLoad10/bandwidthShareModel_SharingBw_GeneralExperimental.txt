@@ -1,0 +1,3545 @@
+
+
+---------------------------------------load: 10.0--------set nb :0----------------------
+ 
+------------------------------------------------------------ Poisson distribution with | load :10.0 | Arrival Rate = 100.0 | Departure Rate = 10.0----------------------------------------------------------------------
+public double[] arrivals = {0.0,0.001196638172926615,0.0023694506305416236,0.012914402967336164,0.06996118195508312,0.08146325185066333,0.12803689741390767,0.13015647779024148,0.1301672887619965,0.17247759925632974,0.1788824542117228,0.1828862866742254,0.18489894732196344,0.18803914602338273,0.2135192876029796,0.226397254721753,0.23220203876556333,0.24185476203787817,0.2427232338887992,0.24737022280759915,0.24864168273131038,0.2555939794187703,0.25864870288265546,0.2724461248471198,0.28365985275201183,0.28867228089030983,0.2903772126478475,0.3026218744280603,0.3194183553646517,0.3200739367360903,0.33481206374752936,0.33906909082616554,0.3474583118714981,0.35974455199563393,0.3625831059392549,0.3668055992232612,0.3724037731349074,0.37970469242354277,0.42602234850866005,0.42666066440643685,0.42933397069077756,0.43320824341338715,0.4374332100342439,0.4453810639855809,0.4471825467757204,0.4494011716250943,0.449469724310406,0.4705828327196251,0.4729411634346399,0.4799399054946219,0.4801443831541669,0.48322140791332824,0.48997433643830607,0.4918231245511745,0.49952377500140976,0.5243054156671784,0.5400661222714717,0.5613048433404337,0.5748200108474778,0.5809940385898867,0.5931609996377829,0.6035960078872844,0.6100818051820271,0.6102160696902968,0.6195852908668089,0.6343856068282125,0.684965134118362,0.686680061420674,0.711020222556232,0.7257314135681988,0.7591197724591592,0.767436112434198,0.7876680127630247,0.7961707459222557,0.8273670258436017,0.8472524147087911,0.8474488883416926,0.8532442807382469,0.8535228591532598,0.8572843547128997,0.8581861469982305,0.8654128441385591,0.8671456601988422,0.8790453915086044,0.8799534634580335,0.8856228918371373,0.8858821291737055,0.8913840773650925,0.8924621525925727,0.9157646570527029,0.9361677368875534,0.9541553589339308,0.9640625196456547,0.9780748314757786,0.9815069706344394,1.0107577717801388,1.013354306113346,1.0225820530999967,1.0391822372369035,1.0727843814356357, }; 
+public double[] departures = {0.12024411054578932,0.11534285549134035,0.01924622777730332,0.0250841682711801,0.09627398276493243,0.3195920767917395,0.1374130495878734,0.15879010886901476,0.26853328586354114,0.23781747909123374,0.1810302548260045,0.33728807065930455,0.527551478653699,0.20817288173987517,0.2178271672813164,0.5704171750052234,0.28962806812051234,0.5098838758315853,0.31733090255420243,0.25662146328196583,0.530101931369686,0.28183386776321095,0.28296329282717936,0.3723976894471797,0.2906877382562962,0.35746410978396204,0.3294035599307854,0.6734211080251885,0.34793506143608754,0.3942586528368945,0.6886154170885119,0.3529369768315854,0.4615721892534197,0.6299817601997382,0.4759991803728844,0.3731986953119594,0.42386577842573814,0.5162169875857248,0.44619911100555715,0.7785387316366307,0.5222148006628776,0.463731502357848,0.5892453864545883,0.6227276870297629,0.5835230727846064,0.4766287732732607,0.5842286182170148,0.559270493760515,0.7390869340483057,0.7032695283861059,0.5348111198100234,0.6131121525183636,0.7619027895065296,0.5354465984799474,0.5704654038460041,0.7501799238564221,0.5849049195267128,0.6628722472072155,0.6669022013525586,0.8430318993636976,0.6556264807700427,0.6961840902376906,0.6166935004610385,0.688984524795577,0.72296922376354,0.7364782679981798,0.6915331235078328,0.7116142253774372,0.7350531778723717,0.989466274951601,0.8667822361541173,0.7742159206741078,1.0146019614599318,0.8489861669776634,0.8668673402297951,0.8473123651457967,0.8547877961073151,0.8862207687856879,0.9787426220795002,0.8693913250914522,1.027782545695727,0.9613324678823987,0.9848015727607395,0.9949724323942016,0.9884883827812984,0.9236216156326813,1.0175676752010665,0.958834456794835,1.0781485014289975,1.031360721952128,1.060941766116997,0.9676891509515952,0.981675484878845,0.9867045904584102,1.1504369278832474,1.048634609919254,1.2557847753151492,1.2164769716738821,1.2907415583913056,1.158567638090502,};
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+==================================================================================================================================
+  ---------------------------------------------------------------------- Fat tree network of ------------------------------------------------------------------------------ 
+ ----128 Servers----6 VM per server----
+ ----2 Servers per TOR switch (64 TOR)----
+ ----2 of TOR switch per Aggregate (32 Aggregate)----
+ ----32 Aggregate per core (1 core )----
+ Links capacity : server-TOR = 1000 | TOR-AGG =  10000 | AGG-Core = 10000 ----
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+--------Link0 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link1 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link2 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link3 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link4 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link5 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link6 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link7 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link8 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link9 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link10 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link11 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link12 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link13 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link14 : capacity = 1000 ; residualBanadiwdth = 97------ 
+SharingSets---
+ 
+--------Link15 : capacity = 1000 ; residualBanadiwdth = 95------ 
+SharingSets---
+ 
+--------Link16 : capacity = 1000 ; residualBanadiwdth = 95------ 
+SharingSets---
+ 
+--------Link17 : capacity = 1000 ; residualBanadiwdth = 95------ 
+SharingSets---
+ 
+--------Link18 : capacity = 1000 ; residualBanadiwdth = 95------ 
+SharingSets---
+ 
+--------Link19 : capacity = 1000 ; residualBanadiwdth = 95------ 
+SharingSets---
+ 
+--------Link20 : capacity = 1000 ; residualBanadiwdth = 462------ 
+SharingSets---
+ 
+--------Link21 : capacity = 1000 ; residualBanadiwdth = 462------ 
+SharingSets---
+ 
+--------Link22 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link23 : capacity = 1000 ; residualBanadiwdth = 70------ 
+SharingSets---
+ 
+--------Link24 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link25 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link26 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link27 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link28 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link29 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link30 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link31 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link32 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link33 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link34 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link35 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link36 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link37 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link38 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link39 : capacity = 1000 ; residualBanadiwdth = 147------ 
+SharingSets---
+ 
+--------Link40 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link41 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link42 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link43 : capacity = 1000 ; residualBanadiwdth = 95------ 
+SharingSets---
+ 
+--------Link44 : capacity = 1000 ; residualBanadiwdth = 505------ 
+SharingSets---
+ 
+--------Link45 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link46 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link47 : capacity = 1000 ; residualBanadiwdth = 505------ 
+SharingSets---
+ 
+--------Link48 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link49 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link50 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link51 : capacity = 1000 ; residualBanadiwdth = 113------ 
+SharingSets---
+ 
+--------Link52 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link53 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link54 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link55 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link56 : capacity = 1000 ; residualBanadiwdth = 52------ 
+SharingSets---
+ 
+--------Link57 : capacity = 1000 ; residualBanadiwdth = 52------ 
+SharingSets---
+ 
+--------Link58 : capacity = 1000 ; residualBanadiwdth = 52------ 
+SharingSets---
+ 
+--------Link59 : capacity = 1000 ; residualBanadiwdth = 172------ 
+SharingSets---
+ 
+--------Link60 : capacity = 1000 ; residualBanadiwdth = 29------ 
+SharingSets---
+ 
+--------Link61 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link62 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link63 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link64 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link65 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link66 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link67 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link68 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link69 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link70 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link71 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link72 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link73 : capacity = 1000 ; residualBanadiwdth = 54------ 
+SharingSets---
+ 
+--------Link74 : capacity = 1000 ; residualBanadiwdth = 54------ 
+SharingSets---
+ 
+--------Link75 : capacity = 1000 ; residualBanadiwdth = 54------ 
+SharingSets---
+ 
+--------Link76 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link77 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link78 : capacity = 1000 ; residualBanadiwdth = 617------ 
+SharingSets---
+ 
+--------Link79 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link80 : capacity = 1000 ; residualBanadiwdth = 214------ 
+SharingSets---
+ 
+--------Link81 : capacity = 1000 ; residualBanadiwdth = 214------ 
+SharingSets---
+ 
+--------Link82 : capacity = 1000 ; residualBanadiwdth = 214------ 
+SharingSets---
+ 
+--------Link83 : capacity = 1000 ; residualBanadiwdth = 214------ 
+SharingSets---
+ 
+--------Link84 : capacity = 1000 ; residualBanadiwdth = 100------ 
+SharingSets---
+ 
+--------Link85 : capacity = 1000 ; residualBanadiwdth = 100------ 
+SharingSets---
+ 
+--------Link86 : capacity = 1000 ; residualBanadiwdth = 100------ 
+SharingSets---
+ 
+--------Link87 : capacity = 1000 ; residualBanadiwdth = 100------ 
+SharingSets---
+ 
+--------Link88 : capacity = 1000 ; residualBanadiwdth = 118------ 
+SharingSets---
+ 
+--------Link89 : capacity = 1000 ; residualBanadiwdth = 24------ 
+SharingSets---
+ 
+--------Link90 : capacity = 1000 ; residualBanadiwdth = 24------ 
+SharingSets---
+ 
+--------Link91 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link92 : capacity = 1000 ; residualBanadiwdth = 62------ 
+SharingSets---
+ 
+--------Link93 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link94 : capacity = 1000 ; residualBanadiwdth = 663------ 
+SharingSets---
+ 
+--------Link95 : capacity = 1000 ; residualBanadiwdth = 663------ 
+SharingSets---
+ 
+--------Link96 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link97 : capacity = 1000 ; residualBanadiwdth = 43------ 
+SharingSets---
+ 
+--------Link98 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link99 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link100 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link101 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link102 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link103 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link104 : capacity = 1000 ; residualBanadiwdth = 24------ 
+SharingSets---
+ 
+--------Link105 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link106 : capacity = 1000 ; residualBanadiwdth = 617------ 
+SharingSets---
+ 
+--------Link107 : capacity = 1000 ; residualBanadiwdth = 79------ 
+SharingSets---
+ 
+--------Link108 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link109 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link110 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link111 : capacity = 1000 ; residualBanadiwdth = 617------ 
+SharingSets---
+ 
+--------Link112 : capacity = 1000 ; residualBanadiwdth = 128------ 
+SharingSets---
+ 
+--------Link113 : capacity = 1000 ; residualBanadiwdth = 128------ 
+SharingSets---
+ 
+--------Link114 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link115 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link116 : capacity = 1000 ; residualBanadiwdth = 534------ 
+SharingSets---
+ 
+--------Link117 : capacity = 1000 ; residualBanadiwdth = 534------ 
+SharingSets---
+ 
+--------Link118 : capacity = 1000 ; residualBanadiwdth = 265------ 
+SharingSets---
+ 
+--------Link119 : capacity = 1000 ; residualBanadiwdth = 534------ 
+SharingSets---
+ 
+--------Link120 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link121 : capacity = 1000 ; residualBanadiwdth = 128------ 
+SharingSets---
+ 
+--------Link122 : capacity = 1000 ; residualBanadiwdth = 701------ 
+SharingSets---
+ 
+--------Link123 : capacity = 1000 ; residualBanadiwdth = 701------ 
+SharingSets---
+ 
+--------Link124 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link125 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link126 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link127 : capacity = 1000 ; residualBanadiwdth = 234------ 
+SharingSets---
+ 
+--------Link128 : capacity = 10000 ; residualBanadiwdth = 8158------ 
+SharingSets---
+ 
+--------Link129 : capacity = 10000 ; residualBanadiwdth = 8158------ 
+SharingSets---
+ 
+--------Link130 : capacity = 10000 ; residualBanadiwdth = 8158------ 
+SharingSets---
+ 
+--------Link131 : capacity = 10000 ; residualBanadiwdth = 8158------ 
+SharingSets---
+ 
+--------Link132 : capacity = 10000 ; residualBanadiwdth = 8194------ 
+SharingSets---
+ 
+--------Link133 : capacity = 10000 ; residualBanadiwdth = 8194------ 
+SharingSets---
+ 
+--------Link134 : capacity = 10000 ; residualBanadiwdth = 8194------ 
+SharingSets---
+ 
+--------Link135 : capacity = 10000 ; residualBanadiwdth = 8192------ 
+SharingSets---
+ 
+--------Link136 : capacity = 10000 ; residualBanadiwdth = 8190------ 
+SharingSets---
+ 
+--------Link137 : capacity = 10000 ; residualBanadiwdth = 8190------ 
+SharingSets---
+ 
+--------Link138 : capacity = 10000 ; residualBanadiwdth = 9462------ 
+SharingSets---
+ 
+--------Link139 : capacity = 10000 ; residualBanadiwdth = 8078------ 
+SharingSets---
+ 
+--------Link140 : capacity = 10000 ; residualBanadiwdth = 8016------ 
+SharingSets---
+ 
+--------Link141 : capacity = 10000 ; residualBanadiwdth = 8016------ 
+SharingSets---
+ 
+--------Link142 : capacity = 10000 ; residualBanadiwdth = 8016------ 
+SharingSets---
+ 
+--------Link143 : capacity = 10000 ; residualBanadiwdth = 8016------ 
+SharingSets---
+ 
+--------Link144 : capacity = 10000 ; residualBanadiwdth = 8018------ 
+SharingSets---
+ 
+--------Link145 : capacity = 10000 ; residualBanadiwdth = 8020------ 
+SharingSets---
+ 
+--------Link146 : capacity = 10000 ; residualBanadiwdth = 8747------ 
+SharingSets---
+ 
+--------Link147 : capacity = 10000 ; residualBanadiwdth = 8252------ 
+SharingSets---
+ 
+--------Link148 : capacity = 10000 ; residualBanadiwdth = 8020------ 
+SharingSets---
+ 
+--------Link149 : capacity = 10000 ; residualBanadiwdth = 8105------ 
+SharingSets---
+ 
+--------Link150 : capacity = 10000 ; residualBanadiwdth = 8515------ 
+SharingSets---
+ 
+--------Link151 : capacity = 10000 ; residualBanadiwdth = 8515------ 
+SharingSets---
+ 
+--------Link152 : capacity = 10000 ; residualBanadiwdth = 8515------ 
+SharingSets---
+ 
+--------Link153 : capacity = 10000 ; residualBanadiwdth = 8123------ 
+SharingSets---
+ 
+--------Link154 : capacity = 10000 ; residualBanadiwdth = 8030------ 
+SharingSets---
+ 
+--------Link155 : capacity = 10000 ; residualBanadiwdth = 8040------ 
+SharingSets---
+ 
+--------Link156 : capacity = 10000 ; residualBanadiwdth = 9052------ 
+SharingSets---
+ 
+--------Link157 : capacity = 10000 ; residualBanadiwdth = 8856------ 
+SharingSets---
+ 
+--------Link158 : capacity = 10000 ; residualBanadiwdth = 8123------ 
+SharingSets---
+ 
+--------Link159 : capacity = 10000 ; residualBanadiwdth = 8110------ 
+SharingSets---
+ 
+--------Link160 : capacity = 10000 ; residualBanadiwdth = 9112------ 
+SharingSets---
+ 
+--------Link161 : capacity = 10000 ; residualBanadiwdth = 8206------ 
+SharingSets---
+ 
+--------Link162 : capacity = 10000 ; residualBanadiwdth = 8188------ 
+SharingSets---
+ 
+--------Link163 : capacity = 10000 ; residualBanadiwdth = 8104------ 
+SharingSets---
+ 
+--------Link164 : capacity = 10000 ; residualBanadiwdth = 8087------ 
+SharingSets---
+ 
+--------Link165 : capacity = 10000 ; residualBanadiwdth = 9054------ 
+SharingSets---
+ 
+--------Link166 : capacity = 10000 ; residualBanadiwdth = 9008------ 
+SharingSets---
+ 
+--------Link167 : capacity = 10000 ; residualBanadiwdth = 8722------ 
+SharingSets---
+ 
+--------Link168 : capacity = 10000 ; residualBanadiwdth = 9083------ 
+SharingSets---
+ 
+--------Link169 : capacity = 10000 ; residualBanadiwdth = 9083------ 
+SharingSets---
+ 
+--------Link170 : capacity = 10000 ; residualBanadiwdth = 8950------ 
+SharingSets---
+ 
+--------Link171 : capacity = 10000 ; residualBanadiwdth = 8950------ 
+SharingSets---
+ 
+--------Link172 : capacity = 10000 ; residualBanadiwdth = 8142------ 
+SharingSets---
+ 
+--------Link173 : capacity = 10000 ; residualBanadiwdth = 8074------ 
+SharingSets---
+ 
+--------Link174 : capacity = 10000 ; residualBanadiwdth = 8078------ 
+SharingSets---
+ 
+--------Link175 : capacity = 10000 ; residualBanadiwdth = 9663------ 
+SharingSets---
+ 
+--------Link176 : capacity = 10000 ; residualBanadiwdth = 8059------ 
+SharingSets---
+ 
+--------Link177 : capacity = 10000 ; residualBanadiwdth = 8360------ 
+SharingSets---
+ 
+--------Link178 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link179 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link180 : capacity = 10000 ; residualBanadiwdth = 8040------ 
+SharingSets---
+ 
+--------Link181 : capacity = 10000 ; residualBanadiwdth = 8696------ 
+SharingSets---
+ 
+--------Link182 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link183 : capacity = 10000 ; residualBanadiwdth = 8633------ 
+SharingSets---
+ 
+--------Link184 : capacity = 10000 ; residualBanadiwdth = 8256------ 
+SharingSets---
+ 
+--------Link185 : capacity = 10000 ; residualBanadiwdth = 9094------ 
+SharingSets---
+ 
+--------Link186 : capacity = 10000 ; residualBanadiwdth = 9534------ 
+SharingSets---
+ 
+--------Link187 : capacity = 10000 ; residualBanadiwdth = 8799------ 
+SharingSets---
+ 
+--------Link188 : capacity = 10000 ; residualBanadiwdth = 8148------ 
+SharingSets---
+ 
+--------Link189 : capacity = 10000 ; residualBanadiwdth = 9701------ 
+SharingSets---
+ 
+--------Link190 : capacity = 10000 ; residualBanadiwdth = 10000------ 
+SharingSets---
+ 
+--------Link191 : capacity = 10000 ; residualBanadiwdth = 9234------ 
+SharingSets---
+ 
+--------Link192 : capacity = 10000 ; residualBanadiwdth = 6316------ 
+SharingSets---
+ 
+--------Link193 : capacity = 10000 ; residualBanadiwdth = 6316------ 
+SharingSets---
+ 
+--------Link194 : capacity = 10000 ; residualBanadiwdth = 7291------ 
+SharingSets---
+ 
+--------Link195 : capacity = 10000 ; residualBanadiwdth = 6386------ 
+SharingSets---
+ 
+--------Link196 : capacity = 10000 ; residualBanadiwdth = 8190------ 
+SharingSets---
+ 
+--------Link197 : capacity = 10000 ; residualBanadiwdth = 8616------ 
+SharingSets---
+ 
+--------Link198 : capacity = 10000 ; residualBanadiwdth = 6032------ 
+SharingSets---
+ 
+--------Link199 : capacity = 10000 ; residualBanadiwdth = 6032------ 
+SharingSets---
+ 
+--------Link200 : capacity = 10000 ; residualBanadiwdth = 6038------ 
+SharingSets---
+ 
+--------Link201 : capacity = 10000 ; residualBanadiwdth = 8610------ 
+SharingSets---
+ 
+--------Link202 : capacity = 10000 ; residualBanadiwdth = 6125------ 
+SharingSets---
+ 
+--------Link203 : capacity = 10000 ; residualBanadiwdth = 7030------ 
+SharingSets---
+ 
+--------Link204 : capacity = 10000 ; residualBanadiwdth = 8618------ 
+SharingSets---
+ 
+--------Link205 : capacity = 10000 ; residualBanadiwdth = 7050------ 
+SharingSets---
+ 
+--------Link206 : capacity = 10000 ; residualBanadiwdth = 9804------ 
+SharingSets---
+ 
+--------Link207 : capacity = 10000 ; residualBanadiwdth = 6233------ 
+SharingSets---
+ 
+--------Link208 : capacity = 10000 ; residualBanadiwdth = 9094------ 
+SharingSets---
+ 
+--------Link209 : capacity = 10000 ; residualBanadiwdth = 6292------ 
+SharingSets---
+ 
+--------Link210 : capacity = 10000 ; residualBanadiwdth = 9033------ 
+SharingSets---
+ 
+--------Link211 : capacity = 10000 ; residualBanadiwdth = 7730------ 
+SharingSets---
+ 
+--------Link212 : capacity = 10000 ; residualBanadiwdth = 9869------ 
+SharingSets---
+ 
+--------Link213 : capacity = 10000 ; residualBanadiwdth = 9850------ 
+SharingSets---
+ 
+--------Link214 : capacity = 10000 ; residualBanadiwdth = 8656------ 
+SharingSets---
+ 
+--------Link215 : capacity = 10000 ; residualBanadiwdth = 8415------ 
+SharingSets---
+ 
+--------Link216 : capacity = 10000 ; residualBanadiwdth = 8715------ 
+SharingSets---
+ 
+--------Link217 : capacity = 10000 ; residualBanadiwdth = 6064------ 
+SharingSets---
+ 
+--------Link218 : capacity = 10000 ; residualBanadiwdth = 6736------ 
+SharingSets---
+ 
+--------Link219 : capacity = 10000 ; residualBanadiwdth = 6665------ 
+SharingSets---
+ 
+--------Link220 : capacity = 10000 ; residualBanadiwdth = 7350------ 
+SharingSets---
+ 
+--------Link221 : capacity = 10000 ; residualBanadiwdth = 9265------ 
+SharingSets---
+ 
+--------Link222 : capacity = 10000 ; residualBanadiwdth = 7849------ 
+SharingSets---
+ 
+--------Link223 : capacity = 10000 ; residualBanadiwdth = 9234------ 
+SharingSets---
+Nb of Rejected request before 2nd run :48 Nb of Rejected request After 2nd run :48
+---- Revenue (if offline mode, it is the revenue for the initial set):23461.173000000003 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+---- Revenue (if offline mode, it is the revenue after embedding the rejected set):23461.173000000003 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+------------------ Execution of : bandwidthShareModel -------------------
+ 
+---- ExecutionTime:1221 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate for the initial set )73.0 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate after embedding  the rejected set)100.0 -----
+ 
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain for the initial set :39.3687707641196 bandwidth can be shared :12040reserved shared bandwidth 7300
+
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain after trying to embed the rejected requests :39.3687707641196 bandwidth can be shared :12040reserved shared bandwidth 7300
+==================================================================================================================================
+
+
+---------------------------------------load: 10.0--------set nb :1----------------------
+ 
+------------------------------------------------------------ Poisson distribution with | load :10.0 | Arrival Rate = 100.0 | Departure Rate = 10.0----------------------------------------------------------------------
+public double[] arrivals = {0.0,0.012902878947376994,0.01645881786250439,0.016905473599915514,0.02030608865536156,0.021100312912063518,0.021779333499678262,0.022829720126076754,0.04035551268566197,0.0447781842111616,0.04615263576288369,0.06375575027053876,0.0979322109863442,0.09842487456345217,0.1034145514552206,0.10391908881428345,0.10608826316698802,0.11540160359005938,0.13251950262719392,0.13897122026085781,0.1401841652417218,0.14337912680166878,0.15249804206780365,0.15930459004308237,0.16014635077714054,0.16566809799559434,0.16702843150540875,0.1725433684505612,0.17868971117379076,0.1831861813193167,0.18889516352478755,0.19679725345715512,0.2074935684477892,0.21417868541797916,0.21904855071834572,0.2276527331066453,0.2499201133571243,0.2556890507188225,0.2559893666262466,0.2615374224592164,0.2658840776174494,0.3165461539336428,0.3209357163402701,0.3244240433355733,0.3262788589480953,0.3283475535399132,0.3403793152187926,0.35765573389687877,0.3720610640973101,0.3731802825200654,0.4075198130361345,0.4096085012317894,0.42365444554095216,0.4418736669681367,0.4497047806717167,0.4575098967658029,0.4650853195594609,0.49332987546266455,0.49752254776923127,0.5149189273066641,0.533879401689116,0.5525350259107455,0.5605871708392276,0.5608835786260015,0.574090986144165,0.5928953587699377,0.5979181541161067,0.5979804768207437,0.6049717639953913,0.6121240411657678,0.6142509528864167,0.6210193798606385,0.6351194789723903,0.6458057917563578,0.6528053571457018,0.666719405009183,0.6733369430486698,0.7010041610069413,0.7036729696478755,0.7208758175097345,0.7290001049220497,0.7381274489629069,0.7389780758411568,0.7429534072524631,0.7479838862456029,0.7523665180778856,0.7561452021882068,0.7600466543659613,0.7686987339004269,0.7814564088892899,0.7882112838019505,0.8066657428938788,0.8091484565629848,0.8113225174906665,0.8368465539352503,0.8424610760192309,0.848667119838189,0.8667465732433032,0.8746418964790357,0.8913781328421844, }; 
+public double[] departures = {0.013999512504909327,0.08328350509456524,0.30867146645367427,0.0772819974099279,0.38685957826777745,0.02328133927575979,0.21284454742196054,0.11733015128746752,0.21412213749789294,0.18753209436323132,0.1489171354449871,0.11336488269425264,0.15455342066220218,0.20390721965905972,0.25070109254811207,0.4182767885238762,0.3215132534385847,0.13843842841666185,0.1472876959639685,0.14785615024170803,0.23167002761689326,0.2729139652300373,0.22515021894115794,0.5039313504013424,0.2722738069407241,0.25884813456866396,0.3514328588247799,0.2830679092131424,0.18407440022224283,0.2233489852291885,0.22301450295719485,0.22422892496221125,0.449906737979892,0.2141935936508593,0.23707853168193505,0.35704428042957753,0.4219922523836947,0.30675186206678706,0.5037183551973099,0.28938540084021036,0.2873498150152541,0.431677190468226,0.33006616476331146,0.6003038237247906,0.3461748995642385,0.34722673208244853,0.44042295483692356,0.3998248845360343,0.4917903817770376,0.5063991994475352,0.4115324194780269,0.47814939372029097,0.5751707275958775,0.4597450364667391,0.46028881488999596,0.4624641556899946,0.736238834678443,0.5215310175707497,0.6263790341851134,0.7445082107607061,0.750544531949523,0.5988063556692623,0.6998003827300792,0.7246586342584441,0.7174350316972794,0.916284821753077,0.7034972644837028,0.682454804047747,0.7913045592761833,0.6433207124546834,0.6161840483538951,0.762455838824606,0.6358431103869724,1.1355555168692868,0.79316636017418,0.8133897754653306,0.7361209991693924,0.9212449885284334,0.7731677006852052,0.7787847839224913,0.8710593358019694,0.800018071188595,0.8122193313690345,0.7746882138008562,0.8894279959249896,0.9170510632777155,0.8267143266677701,0.8786214389758303,1.1230355742449474,0.8636236163842468,0.8856328502154706,0.8693823266813907,0.8758981173162436,0.8388853031199125,1.0278226727785804,1.0288008632727033,0.875309339756035,0.9288103818687296,0.8784026571207131,1.0321307756159164,};
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+==================================================================================================================================
+  ---------------------------------------------------------------------- Fat tree network of ------------------------------------------------------------------------------ 
+ ----128 Servers----6 VM per server----
+ ----2 Servers per TOR switch (64 TOR)----
+ ----2 of TOR switch per Aggregate (32 Aggregate)----
+ ----32 Aggregate per core (1 core )----
+ Links capacity : server-TOR = 1000 | TOR-AGG =  10000 | AGG-Core = 10000 ----
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+--------Link0 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link1 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link2 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link3 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link4 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link5 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link6 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link7 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link8 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link9 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link10 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link11 : capacity = 1000 ; residualBanadiwdth = 68------ 
+SharingSets---
+ 
+--------Link12 : capacity = 1000 ; residualBanadiwdth = 68------ 
+SharingSets---
+ 
+--------Link13 : capacity = 1000 ; residualBanadiwdth = 68------ 
+SharingSets---
+ 
+--------Link14 : capacity = 1000 ; residualBanadiwdth = 68------ 
+SharingSets---
+ 
+--------Link15 : capacity = 1000 ; residualBanadiwdth = 68------ 
+SharingSets---
+ 
+--------Link16 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link17 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link18 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link19 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link20 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link21 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link22 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link23 : capacity = 1000 ; residualBanadiwdth = 56------ 
+SharingSets---
+ 
+--------Link24 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link25 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link26 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link27 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link28 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link29 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link30 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link31 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link32 : capacity = 1000 ; residualBanadiwdth = 150------ 
+SharingSets---
+ 
+--------Link33 : capacity = 1000 ; residualBanadiwdth = 150------ 
+SharingSets---
+ 
+--------Link34 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link35 : capacity = 1000 ; residualBanadiwdth = 150------ 
+SharingSets---
+ 
+--------Link36 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link37 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link38 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link39 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link40 : capacity = 1000 ; residualBanadiwdth = 400------ 
+SharingSets---
+ 
+--------Link41 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link42 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link43 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link44 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link45 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link46 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link47 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link48 : capacity = 1000 ; residualBanadiwdth = 56------ 
+SharingSets---
+ 
+--------Link49 : capacity = 1000 ; residualBanadiwdth = 56------ 
+SharingSets---
+ 
+--------Link50 : capacity = 1000 ; residualBanadiwdth = 56------ 
+SharingSets---
+ 
+--------Link51 : capacity = 1000 ; residualBanadiwdth = 56------ 
+SharingSets---
+ 
+--------Link52 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link53 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link54 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link55 : capacity = 1000 ; residualBanadiwdth = 7------ 
+SharingSets---
+ 
+--------Link56 : capacity = 1000 ; residualBanadiwdth = 130------ 
+SharingSets---
+ 
+--------Link57 : capacity = 1000 ; residualBanadiwdth = 202------ 
+SharingSets---
+ 
+--------Link58 : capacity = 1000 ; residualBanadiwdth = 202------ 
+SharingSets---
+ 
+--------Link59 : capacity = 1000 ; residualBanadiwdth = 166------ 
+SharingSets---
+ 
+--------Link60 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link61 : capacity = 1000 ; residualBanadiwdth = 141------ 
+SharingSets---
+ 
+--------Link62 : capacity = 1000 ; residualBanadiwdth = 141------ 
+SharingSets---
+ 
+--------Link63 : capacity = 1000 ; residualBanadiwdth = 141------ 
+SharingSets---
+ 
+--------Link64 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link65 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link66 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link67 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link68 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link69 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link70 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link71 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link72 : capacity = 1000 ; residualBanadiwdth = 150------ 
+SharingSets---
+ 
+--------Link73 : capacity = 1000 ; residualBanadiwdth = 56------ 
+SharingSets---
+ 
+--------Link74 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link75 : capacity = 1000 ; residualBanadiwdth = 348------ 
+SharingSets---
+ 
+--------Link76 : capacity = 1000 ; residualBanadiwdth = 46------ 
+SharingSets---
+ 
+--------Link77 : capacity = 1000 ; residualBanadiwdth = 46------ 
+SharingSets---
+ 
+--------Link78 : capacity = 1000 ; residualBanadiwdth = 46------ 
+SharingSets---
+ 
+--------Link79 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link80 : capacity = 1000 ; residualBanadiwdth = 241------ 
+SharingSets---
+ 
+--------Link81 : capacity = 1000 ; residualBanadiwdth = 410------ 
+SharingSets---
+ 
+--------Link82 : capacity = 1000 ; residualBanadiwdth = 410------ 
+SharingSets---
+ 
+--------Link83 : capacity = 1000 ; residualBanadiwdth = 290------ 
+SharingSets---
+ 
+--------Link84 : capacity = 1000 ; residualBanadiwdth = 280------ 
+SharingSets---
+ 
+--------Link85 : capacity = 1000 ; residualBanadiwdth = 280------ 
+SharingSets---
+ 
+--------Link86 : capacity = 1000 ; residualBanadiwdth = 290------ 
+SharingSets---
+ 
+--------Link87 : capacity = 1000 ; residualBanadiwdth = 280------ 
+SharingSets---
+ 
+--------Link88 : capacity = 1000 ; residualBanadiwdth = 290------ 
+SharingSets---
+ 
+--------Link89 : capacity = 1000 ; residualBanadiwdth = 162------ 
+SharingSets---
+ 
+--------Link90 : capacity = 1000 ; residualBanadiwdth = 162------ 
+SharingSets---
+ 
+--------Link91 : capacity = 1000 ; residualBanadiwdth = 162------ 
+SharingSets---
+ 
+--------Link92 : capacity = 1000 ; residualBanadiwdth = 176------ 
+SharingSets---
+ 
+--------Link93 : capacity = 1000 ; residualBanadiwdth = 176------ 
+SharingSets---
+ 
+--------Link94 : capacity = 1000 ; residualBanadiwdth = 176------ 
+SharingSets---
+ 
+--------Link95 : capacity = 1000 ; residualBanadiwdth = 176------ 
+SharingSets---
+ 
+--------Link96 : capacity = 1000 ; residualBanadiwdth = 290------ 
+SharingSets---
+ 
+--------Link97 : capacity = 1000 ; residualBanadiwdth = 645------ 
+SharingSets---
+ 
+--------Link98 : capacity = 1000 ; residualBanadiwdth = 310------ 
+SharingSets---
+ 
+--------Link99 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link100 : capacity = 1000 ; residualBanadiwdth = 400------ 
+SharingSets---
+ 
+--------Link101 : capacity = 1000 ; residualBanadiwdth = 400------ 
+SharingSets---
+ 
+--------Link102 : capacity = 1000 ; residualBanadiwdth = 48------ 
+SharingSets---
+ 
+--------Link103 : capacity = 1000 ; residualBanadiwdth = 400------ 
+SharingSets---
+ 
+--------Link104 : capacity = 1000 ; residualBanadiwdth = 540------ 
+SharingSets---
+ 
+--------Link105 : capacity = 1000 ; residualBanadiwdth = 96------ 
+SharingSets---
+ 
+--------Link106 : capacity = 1000 ; residualBanadiwdth = 540------ 
+SharingSets---
+ 
+--------Link107 : capacity = 1000 ; residualBanadiwdth = 290------ 
+SharingSets---
+ 
+--------Link108 : capacity = 1000 ; residualBanadiwdth = 645------ 
+SharingSets---
+ 
+--------Link109 : capacity = 1000 ; residualBanadiwdth = 202------ 
+SharingSets---
+ 
+--------Link110 : capacity = 1000 ; residualBanadiwdth = 645------ 
+SharingSets---
+ 
+--------Link111 : capacity = 1000 ; residualBanadiwdth = 290------ 
+SharingSets---
+ 
+--------Link112 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link113 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link114 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link115 : capacity = 1000 ; residualBanadiwdth = 176------ 
+SharingSets---
+ 
+--------Link116 : capacity = 1000 ; residualBanadiwdth = 53------ 
+SharingSets---
+ 
+--------Link117 : capacity = 1000 ; residualBanadiwdth = 645------ 
+SharingSets---
+ 
+--------Link118 : capacity = 1000 ; residualBanadiwdth = 53------ 
+SharingSets---
+ 
+--------Link119 : capacity = 1000 ; residualBanadiwdth = 763------ 
+SharingSets---
+ 
+--------Link120 : capacity = 1000 ; residualBanadiwdth = 122------ 
+SharingSets---
+ 
+--------Link121 : capacity = 1000 ; residualBanadiwdth = 758------ 
+SharingSets---
+ 
+--------Link122 : capacity = 1000 ; residualBanadiwdth = 758------ 
+SharingSets---
+ 
+--------Link123 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link124 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link125 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link126 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link127 : capacity = 1000 ; residualBanadiwdth = 200------ 
+SharingSets---
+ 
+--------Link128 : capacity = 10000 ; residualBanadiwdth = 8046------ 
+SharingSets---
+ 
+--------Link129 : capacity = 10000 ; residualBanadiwdth = 8046------ 
+SharingSets---
+ 
+--------Link130 : capacity = 10000 ; residualBanadiwdth = 8031------ 
+SharingSets---
+ 
+--------Link131 : capacity = 10000 ; residualBanadiwdth = 8016------ 
+SharingSets---
+ 
+--------Link132 : capacity = 10000 ; residualBanadiwdth = 8016------ 
+SharingSets---
+ 
+--------Link133 : capacity = 10000 ; residualBanadiwdth = 8076------ 
+SharingSets---
+ 
+--------Link134 : capacity = 10000 ; residualBanadiwdth = 8136------ 
+SharingSets---
+ 
+--------Link135 : capacity = 10000 ; residualBanadiwdth = 8136------ 
+SharingSets---
+ 
+--------Link136 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link137 : capacity = 10000 ; residualBanadiwdth = 8296------ 
+SharingSets---
+ 
+--------Link138 : capacity = 10000 ; residualBanadiwdth = 8296------ 
+SharingSets---
+ 
+--------Link139 : capacity = 10000 ; residualBanadiwdth = 8074------ 
+SharingSets---
+ 
+--------Link140 : capacity = 10000 ; residualBanadiwdth = 9094------ 
+SharingSets---
+ 
+--------Link141 : capacity = 10000 ; residualBanadiwdth = 8112------ 
+SharingSets---
+ 
+--------Link142 : capacity = 10000 ; residualBanadiwdth = 8036------ 
+SharingSets---
+ 
+--------Link143 : capacity = 10000 ; residualBanadiwdth = 8036------ 
+SharingSets---
+ 
+--------Link144 : capacity = 10000 ; residualBanadiwdth = 8300------ 
+SharingSets---
+ 
+--------Link145 : capacity = 10000 ; residualBanadiwdth = 8168------ 
+SharingSets---
+ 
+--------Link146 : capacity = 10000 ; residualBanadiwdth = 9018------ 
+SharingSets---
+ 
+--------Link147 : capacity = 10000 ; residualBanadiwdth = 9148------ 
+SharingSets---
+ 
+--------Link148 : capacity = 10000 ; residualBanadiwdth = 8407------ 
+SharingSets---
+ 
+--------Link149 : capacity = 10000 ; residualBanadiwdth = 8014------ 
+SharingSets---
+ 
+--------Link150 : capacity = 10000 ; residualBanadiwdth = 8014------ 
+SharingSets---
+ 
+--------Link151 : capacity = 10000 ; residualBanadiwdth = 8014------ 
+SharingSets---
+ 
+--------Link152 : capacity = 10000 ; residualBanadiwdth = 8112------ 
+SharingSets---
+ 
+--------Link153 : capacity = 10000 ; residualBanadiwdth = 8112------ 
+SharingSets---
+ 
+--------Link154 : capacity = 10000 ; residualBanadiwdth = 8014------ 
+SharingSets---
+ 
+--------Link155 : capacity = 10000 ; residualBanadiwdth = 8014------ 
+SharingSets---
+ 
+--------Link156 : capacity = 10000 ; residualBanadiwdth = 8332------ 
+SharingSets---
+ 
+--------Link157 : capacity = 10000 ; residualBanadiwdth = 8501------ 
+SharingSets---
+ 
+--------Link158 : capacity = 10000 ; residualBanadiwdth = 8215------ 
+SharingSets---
+ 
+--------Link159 : capacity = 10000 ; residualBanadiwdth = 8282------ 
+SharingSets---
+ 
+--------Link160 : capacity = 10000 ; residualBanadiwdth = 8026------ 
+SharingSets---
+ 
+--------Link161 : capacity = 10000 ; residualBanadiwdth = 8122------ 
+SharingSets---
+ 
+--------Link162 : capacity = 10000 ; residualBanadiwdth = 8218------ 
+SharingSets---
+ 
+--------Link163 : capacity = 10000 ; residualBanadiwdth = 8218------ 
+SharingSets---
+ 
+--------Link164 : capacity = 10000 ; residualBanadiwdth = 8206------ 
+SharingSets---
+ 
+--------Link165 : capacity = 10000 ; residualBanadiwdth = 8457------ 
+SharingSets---
+ 
+--------Link166 : capacity = 10000 ; residualBanadiwdth = 9046------ 
+SharingSets---
+ 
+--------Link167 : capacity = 10000 ; residualBanadiwdth = 8054------ 
+SharingSets---
+ 
+--------Link168 : capacity = 10000 ; residualBanadiwdth = 9241------ 
+SharingSets---
+ 
+--------Link169 : capacity = 10000 ; residualBanadiwdth = 8700------ 
+SharingSets---
+ 
+--------Link170 : capacity = 10000 ; residualBanadiwdth = 9280------ 
+SharingSets---
+ 
+--------Link171 : capacity = 10000 ; residualBanadiwdth = 8570------ 
+SharingSets---
+ 
+--------Link172 : capacity = 10000 ; residualBanadiwdth = 8452------ 
+SharingSets---
+ 
+--------Link173 : capacity = 10000 ; residualBanadiwdth = 8452------ 
+SharingSets---
+ 
+--------Link174 : capacity = 10000 ; residualBanadiwdth = 9176------ 
+SharingSets---
+ 
+--------Link175 : capacity = 10000 ; residualBanadiwdth = 9176------ 
+SharingSets---
+ 
+--------Link176 : capacity = 10000 ; residualBanadiwdth = 8935------ 
+SharingSets---
+ 
+--------Link177 : capacity = 10000 ; residualBanadiwdth = 8419------ 
+SharingSets---
+ 
+--------Link178 : capacity = 10000 ; residualBanadiwdth = 9300------ 
+SharingSets---
+ 
+--------Link179 : capacity = 10000 ; residualBanadiwdth = 8448------ 
+SharingSets---
+ 
+--------Link180 : capacity = 10000 ; residualBanadiwdth = 9096------ 
+SharingSets---
+ 
+--------Link181 : capacity = 10000 ; residualBanadiwdth = 8830------ 
+SharingSets---
+ 
+--------Link182 : capacity = 10000 ; residualBanadiwdth = 8847------ 
+SharingSets---
+ 
+--------Link183 : capacity = 10000 ; residualBanadiwdth = 8935------ 
+SharingSets---
+ 
+--------Link184 : capacity = 10000 ; residualBanadiwdth = 9112------ 
+SharingSets---
+ 
+--------Link185 : capacity = 10000 ; residualBanadiwdth = 8288------ 
+SharingSets---
+ 
+--------Link186 : capacity = 10000 ; residualBanadiwdth = 8698------ 
+SharingSets---
+ 
+--------Link187 : capacity = 10000 ; residualBanadiwdth = 9053------ 
+SharingSets---
+ 
+--------Link188 : capacity = 10000 ; residualBanadiwdth = 9122------ 
+SharingSets---
+ 
+--------Link189 : capacity = 10000 ; residualBanadiwdth = 9758------ 
+SharingSets---
+ 
+--------Link190 : capacity = 10000 ; residualBanadiwdth = 9000------ 
+SharingSets---
+ 
+--------Link191 : capacity = 10000 ; residualBanadiwdth = 9000------ 
+SharingSets---
+ 
+--------Link192 : capacity = 10000 ; residualBanadiwdth = 8421------ 
+SharingSets---
+ 
+--------Link193 : capacity = 10000 ; residualBanadiwdth = 6047------ 
+SharingSets---
+ 
+--------Link194 : capacity = 10000 ; residualBanadiwdth = 6092------ 
+SharingSets---
+ 
+--------Link195 : capacity = 10000 ; residualBanadiwdth = 8835------ 
+SharingSets---
+ 
+--------Link196 : capacity = 10000 ; residualBanadiwdth = 7180------ 
+SharingSets---
+ 
+--------Link197 : capacity = 10000 ; residualBanadiwdth = 6370------ 
+SharingSets---
+ 
+--------Link198 : capacity = 10000 ; residualBanadiwdth = 9018------ 
+SharingSets---
+ 
+--------Link199 : capacity = 10000 ; residualBanadiwdth = 6885------ 
+SharingSets---
+ 
+--------Link200 : capacity = 10000 ; residualBanadiwdth = 9018------ 
+SharingSets---
+ 
+--------Link201 : capacity = 10000 ; residualBanadiwdth = 8166------ 
+SharingSets---
+ 
+--------Link202 : capacity = 10000 ; residualBanadiwdth = 6421------ 
+SharingSets---
+ 
+--------Link203 : capacity = 10000 ; residualBanadiwdth = 6028------ 
+SharingSets---
+ 
+--------Link204 : capacity = 10000 ; residualBanadiwdth = 9056------ 
+SharingSets---
+ 
+--------Link205 : capacity = 10000 ; residualBanadiwdth = 6028------ 
+SharingSets---
+ 
+--------Link206 : capacity = 10000 ; residualBanadiwdth = 8695------ 
+SharingSets---
+ 
+--------Link207 : capacity = 10000 ; residualBanadiwdth = 6842------ 
+SharingSets---
+ 
+--------Link208 : capacity = 10000 ; residualBanadiwdth = 6148------ 
+SharingSets---
+ 
+--------Link209 : capacity = 10000 ; residualBanadiwdth = 7030------ 
+SharingSets---
+ 
+--------Link210 : capacity = 10000 ; residualBanadiwdth = 6663------ 
+SharingSets---
+ 
+--------Link211 : capacity = 10000 ; residualBanadiwdth = 8372------ 
+SharingSets---
+ 
+--------Link212 : capacity = 10000 ; residualBanadiwdth = 9121------ 
+SharingSets---
+ 
+--------Link213 : capacity = 10000 ; residualBanadiwdth = 9290------ 
+SharingSets---
+ 
+--------Link214 : capacity = 10000 ; residualBanadiwdth = 7160------ 
+SharingSets---
+ 
+--------Link215 : capacity = 10000 ; residualBanadiwdth = 10000------ 
+SharingSets---
+ 
+--------Link216 : capacity = 10000 ; residualBanadiwdth = 7354------ 
+SharingSets---
+ 
+--------Link217 : capacity = 10000 ; residualBanadiwdth = 8548------ 
+SharingSets---
+ 
+--------Link218 : capacity = 10000 ; residualBanadiwdth = 8846------ 
+SharingSets---
+ 
+--------Link219 : capacity = 10000 ; residualBanadiwdth = 7782------ 
+SharingSets---
+ 
+--------Link220 : capacity = 10000 ; residualBanadiwdth = 8732------ 
+SharingSets---
+ 
+--------Link221 : capacity = 10000 ; residualBanadiwdth = 8225------ 
+SharingSets---
+ 
+--------Link222 : capacity = 10000 ; residualBanadiwdth = 9364------ 
+SharingSets---
+ 
+--------Link223 : capacity = 10000 ; residualBanadiwdth = 10000------ 
+SharingSets---
+Nb of Rejected request before 2nd run :32 Nb of Rejected request After 2nd run :31
+---- Revenue (if offline mode, it is the revenue for the initial set):25981.299000000003 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+---- Revenue (if offline mode, it is the revenue after embedding the rejected set):26521.326 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+------------------ Execution of : bandwidthShareModel -------------------
+ 
+---- ExecutionTime:86 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate for the initial set )70.0 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate after embedding  the rejected set)96.875 -----
+ 
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain for the initial set :36.49387092010043 bandwidth can be shared :13542reserved shared bandwidth 8600
+
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain after trying to embed the rejected requests :33.507820776469124 bandwidth can be shared :16047reserved shared bandwidth 10670
+==================================================================================================================================
+
+
+---------------------------------------load: 10.0--------set nb :2----------------------
+ 
+------------------------------------------------------------ Poisson distribution with | load :10.0 | Arrival Rate = 100.0 | Departure Rate = 10.0----------------------------------------------------------------------
+public double[] arrivals = {0.0,0.02015644538761385,0.021985464316881684,0.02500176089471971,0.02686501809885945,0.029826015319551757,0.04513711647303133,0.04521823932294007,0.06717796761388738,0.07057797552525732,0.08535506374176385,0.09704672516176728,0.12095665663422225,0.12144803669262894,0.12912420494997298,0.1292063427738738,0.14332336780646562,0.14689099790068127,0.1612972720476784,0.19770502285407346,0.19798187982481064,0.2077228601953487,0.21859342134975002,0.24071057010869146,0.2604210290604814,0.27238624902195574,0.28050942305334486,0.2820980969928037,0.287340003384649,0.29879925750059566,0.31236106183862883,0.31687201159422773,0.32318251991951324,0.3277611853780116,0.3696411942721067,0.3739724694706294,0.3880030670815908,0.38856921156703605,0.3893788940631642,0.40273358490934463,0.40283554528011584,0.4142831132544444,0.43226570899542477,0.4322886801669766,0.4327788688917922,0.43607284060237544,0.4411302391807131,0.44195109818064143,0.4427167139237454,0.44332023792130587,0.4490579498089714,0.47074672475659507,0.4722220829355854,0.4994015012858244,0.5033945068219561,0.5071470808554546,0.5081785953846769,0.5230572112077781,0.5308656217845334,0.5309479392978078,0.5310069434106487,0.5436286859525319,0.5614546436157609,0.5780226220491833,0.5909424030520362,0.591405341326025,0.5996463647433609,0.6018452196968074,0.6330995403797369,0.6359300262663504,0.6603189433719389,0.6682623313850832,0.6773770119408138,0.6777235586471814,0.6844437096849411,0.685767546598636,0.698245412415784,0.7073036234127493,0.7074654821255829,0.7138788623440175,0.7327568841857542,0.7482410584442112,0.753158682499598,0.7610248627044225,0.7650186644355247,0.8078179036972035,0.8113408675150057,0.8128412910844972,0.82118777331387,0.8234114787089053,0.825930386633384,0.8277398553792337,0.8409809516168877,0.8498951122134811,0.8626570511271818,0.8650642145864763,0.8668487819429915,0.888259455313813,0.8890939793759538,0.8981862525146957, }; 
+public double[] departures = {0.06708718183702601,0.3241725547894501,0.10737220031339904,0.03856217795922996,0.14780195817868058,0.09469965489217351,0.321893996850292,0.09896060920045546,0.29992990779617157,0.2956681904812255,0.0957867583353066,0.38144743898425976,0.1851910224590212,0.27794041878226494,0.1533210394448995,0.1854856850340442,0.19733589101118448,0.25349191517189323,0.3237210730464242,0.207558146361966,0.5014044205467258,0.218451477000513,0.3889310284198003,0.4726658902347344,0.4431717231207831,0.4216070545111782,0.2863384194815917,0.35049437764673014,0.38000517466129097,0.31005485200894695,0.3968799150824861,0.31817608608586373,0.3610292775250849,0.4116499617448011,0.44125711861771105,0.44487318940517845,0.6484272741665198,0.5603504745595671,0.4764717068335769,0.5088589948557443,0.5672941870952062,0.5454393127927212,0.7000067074688199,0.47197389541239754,0.5243204271220093,0.4438467199138407,0.6849086062959884,0.6400756099437306,0.504689361243656,0.5776816274865546,0.488049828281681,0.5513642160036172,0.507446202252261,0.5551189902368755,0.91294141676786,0.5338780567558824,0.5492592317211069,0.5821414136691091,0.56561979854138,0.6452758127969485,0.5585462305772164,0.729905755017729,0.6212864052524967,0.6703921475790245,0.6414162477928647,0.6357063745703084,0.7488072060158825,0.6277930846639153,0.7818730582856411,0.8000976935962355,0.6663083744421614,0.8455540153041183,0.7078711745087004,0.7197488754027225,0.7199849747273542,0.6990198379869796,0.946443275467675,0.7748387872440579,0.7127250490388627,0.812837106789519,0.9218305084798618,0.7512923469500739,0.9906896497503034,0.983559805399673,0.7886044994362669,0.8678399029147277,0.8308026187104869,0.9750404001469097,0.9582310681120983,1.0225705713012343,0.8968619108624867,0.8305283485153763,0.849050667343005,0.9470979766066214,0.872758869366847,0.9010459286269081,0.8753161462556508,1.019563803240548,0.8983270322516629,1.0577868309700669,};
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+==================================================================================================================================
+  ---------------------------------------------------------------------- Fat tree network of ------------------------------------------------------------------------------ 
+ ----128 Servers----6 VM per server----
+ ----2 Servers per TOR switch (64 TOR)----
+ ----2 of TOR switch per Aggregate (32 Aggregate)----
+ ----32 Aggregate per core (1 core )----
+ Links capacity : server-TOR = 1000 | TOR-AGG =  10000 | AGG-Core = 10000 ----
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+--------Link0 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link1 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link2 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link3 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link4 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link5 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link6 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link7 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link8 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link9 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link10 : capacity = 1000 ; residualBanadiwdth = 3------ 
+SharingSets---
+ 
+--------Link11 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link12 : capacity = 1000 ; residualBanadiwdth = 49------ 
+SharingSets---
+ 
+--------Link13 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link14 : capacity = 1000 ; residualBanadiwdth = 592------ 
+SharingSets---
+ 
+--------Link15 : capacity = 1000 ; residualBanadiwdth = 592------ 
+SharingSets---
+ 
+--------Link16 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link17 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link18 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link19 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link20 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link21 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link22 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link23 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link24 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link25 : capacity = 1000 ; residualBanadiwdth = 41------ 
+SharingSets---
+ 
+--------Link26 : capacity = 1000 ; residualBanadiwdth = 41------ 
+SharingSets---
+ 
+--------Link27 : capacity = 1000 ; residualBanadiwdth = 41------ 
+SharingSets---
+ 
+--------Link28 : capacity = 1000 ; residualBanadiwdth = 41------ 
+SharingSets---
+ 
+--------Link29 : capacity = 1000 ; residualBanadiwdth = 41------ 
+SharingSets---
+ 
+--------Link30 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link31 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link32 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link33 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link34 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link35 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link36 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link37 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link38 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link39 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link40 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link41 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link42 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link43 : capacity = 1000 ; residualBanadiwdth = 21------ 
+SharingSets---
+ 
+--------Link44 : capacity = 1000 ; residualBanadiwdth = 15------ 
+SharingSets---
+ 
+--------Link45 : capacity = 1000 ; residualBanadiwdth = 15------ 
+SharingSets---
+ 
+--------Link46 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link47 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link48 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link49 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link50 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link51 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link52 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link53 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link54 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link55 : capacity = 1000 ; residualBanadiwdth = 118------ 
+SharingSets---
+ 
+--------Link56 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link57 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link58 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link59 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link60 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link61 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link62 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link63 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link64 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link65 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link66 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link67 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link68 : capacity = 1000 ; residualBanadiwdth = 33------ 
+SharingSets---
+ 
+--------Link69 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link70 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link71 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link72 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link73 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link74 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link75 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link76 : capacity = 1000 ; residualBanadiwdth = 55------ 
+SharingSets---
+ 
+--------Link77 : capacity = 1000 ; residualBanadiwdth = 167------ 
+SharingSets---
+ 
+--------Link78 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link79 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link80 : capacity = 1000 ; residualBanadiwdth = 24------ 
+SharingSets---
+ 
+--------Link81 : capacity = 1000 ; residualBanadiwdth = 24------ 
+SharingSets---
+ 
+--------Link82 : capacity = 1000 ; residualBanadiwdth = 24------ 
+SharingSets---
+ 
+--------Link83 : capacity = 1000 ; residualBanadiwdth = 109------ 
+SharingSets---
+ 
+--------Link84 : capacity = 1000 ; residualBanadiwdth = 304------ 
+SharingSets---
+ 
+--------Link85 : capacity = 1000 ; residualBanadiwdth = 304------ 
+SharingSets---
+ 
+--------Link86 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link87 : capacity = 1000 ; residualBanadiwdth = 304------ 
+SharingSets---
+ 
+--------Link88 : capacity = 1000 ; residualBanadiwdth = 40------ 
+SharingSets---
+ 
+--------Link89 : capacity = 1000 ; residualBanadiwdth = 40------ 
+SharingSets---
+ 
+--------Link90 : capacity = 1000 ; residualBanadiwdth = 40------ 
+SharingSets---
+ 
+--------Link91 : capacity = 1000 ; residualBanadiwdth = 40------ 
+SharingSets---
+ 
+--------Link92 : capacity = 1000 ; residualBanadiwdth = 9------ 
+SharingSets---
+ 
+--------Link93 : capacity = 1000 ; residualBanadiwdth = 9------ 
+SharingSets---
+ 
+--------Link94 : capacity = 1000 ; residualBanadiwdth = 9------ 
+SharingSets---
+ 
+--------Link95 : capacity = 1000 ; residualBanadiwdth = 280------ 
+SharingSets---
+ 
+--------Link96 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link97 : capacity = 1000 ; residualBanadiwdth = 9------ 
+SharingSets---
+ 
+--------Link98 : capacity = 1000 ; residualBanadiwdth = 297------ 
+SharingSets---
+ 
+--------Link99 : capacity = 1000 ; residualBanadiwdth = 35------ 
+SharingSets---
+ 
+--------Link100 : capacity = 1000 ; residualBanadiwdth = 61------ 
+SharingSets---
+ 
+--------Link101 : capacity = 1000 ; residualBanadiwdth = 134------ 
+SharingSets---
+ 
+--------Link102 : capacity = 1000 ; residualBanadiwdth = 61------ 
+SharingSets---
+ 
+--------Link103 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link104 : capacity = 1000 ; residualBanadiwdth = 9------ 
+SharingSets---
+ 
+--------Link105 : capacity = 1000 ; residualBanadiwdth = 83------ 
+SharingSets---
+ 
+--------Link106 : capacity = 1000 ; residualBanadiwdth = 61------ 
+SharingSets---
+ 
+--------Link107 : capacity = 1000 ; residualBanadiwdth = 374------ 
+SharingSets---
+ 
+--------Link108 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link109 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link110 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link111 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link112 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link113 : capacity = 1000 ; residualBanadiwdth = 462------ 
+SharingSets---
+ 
+--------Link114 : capacity = 1000 ; residualBanadiwdth = 14------ 
+SharingSets---
+ 
+--------Link115 : capacity = 1000 ; residualBanadiwdth = 218------ 
+SharingSets---
+ 
+--------Link116 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link117 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link118 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link119 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link120 : capacity = 1000 ; residualBanadiwdth = 796------ 
+SharingSets---
+ 
+--------Link121 : capacity = 1000 ; residualBanadiwdth = 61------ 
+SharingSets---
+ 
+--------Link122 : capacity = 1000 ; residualBanadiwdth = 32------ 
+SharingSets---
+ 
+--------Link123 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link124 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link125 : capacity = 1000 ; residualBanadiwdth = 148------ 
+SharingSets---
+ 
+--------Link126 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link127 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link128 : capacity = 10000 ; residualBanadiwdth = 8006------ 
+SharingSets---
+ 
+--------Link129 : capacity = 10000 ; residualBanadiwdth = 8006------ 
+SharingSets---
+ 
+--------Link130 : capacity = 10000 ; residualBanadiwdth = 8006------ 
+SharingSets---
+ 
+--------Link131 : capacity = 10000 ; residualBanadiwdth = 8006------ 
+SharingSets---
+ 
+--------Link132 : capacity = 10000 ; residualBanadiwdth = 8006------ 
+SharingSets---
+ 
+--------Link133 : capacity = 10000 ; residualBanadiwdth = 8019------ 
+SharingSets---
+ 
+--------Link134 : capacity = 10000 ; residualBanadiwdth = 8065------ 
+SharingSets---
+ 
+--------Link135 : capacity = 10000 ; residualBanadiwdth = 9592------ 
+SharingSets---
+ 
+--------Link136 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link137 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link138 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link139 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link140 : capacity = 10000 ; residualBanadiwdth = 8057------ 
+SharingSets---
+ 
+--------Link141 : capacity = 10000 ; residualBanadiwdth = 8082------ 
+SharingSets---
+ 
+--------Link142 : capacity = 10000 ; residualBanadiwdth = 8082------ 
+SharingSets---
+ 
+--------Link143 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link144 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link145 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link146 : capacity = 10000 ; residualBanadiwdth = 8021------ 
+SharingSets---
+ 
+--------Link147 : capacity = 10000 ; residualBanadiwdth = 8042------ 
+SharingSets---
+ 
+--------Link148 : capacity = 10000 ; residualBanadiwdth = 8042------ 
+SharingSets---
+ 
+--------Link149 : capacity = 10000 ; residualBanadiwdth = 8042------ 
+SharingSets---
+ 
+--------Link150 : capacity = 10000 ; residualBanadiwdth = 8030------ 
+SharingSets---
+ 
+--------Link151 : capacity = 10000 ; residualBanadiwdth = 8120------ 
+SharingSets---
+ 
+--------Link152 : capacity = 10000 ; residualBanadiwdth = 8224------ 
+SharingSets---
+ 
+--------Link153 : capacity = 10000 ; residualBanadiwdth = 8224------ 
+SharingSets---
+ 
+--------Link154 : capacity = 10000 ; residualBanadiwdth = 8296------ 
+SharingSets---
+ 
+--------Link155 : capacity = 10000 ; residualBanadiwdth = 8266------ 
+SharingSets---
+ 
+--------Link156 : capacity = 10000 ; residualBanadiwdth = 8296------ 
+SharingSets---
+ 
+--------Link157 : capacity = 10000 ; residualBanadiwdth = 8296------ 
+SharingSets---
+ 
+--------Link158 : capacity = 10000 ; residualBanadiwdth = 8296------ 
+SharingSets---
+ 
+--------Link159 : capacity = 10000 ; residualBanadiwdth = 8181------ 
+SharingSets---
+ 
+--------Link160 : capacity = 10000 ; residualBanadiwdth = 8066------ 
+SharingSets---
+ 
+--------Link161 : capacity = 10000 ; residualBanadiwdth = 8066------ 
+SharingSets---
+ 
+--------Link162 : capacity = 10000 ; residualBanadiwdth = 8142------ 
+SharingSets---
+ 
+--------Link163 : capacity = 10000 ; residualBanadiwdth = 8218------ 
+SharingSets---
+ 
+--------Link164 : capacity = 10000 ; residualBanadiwdth = 8218------ 
+SharingSets---
+ 
+--------Link165 : capacity = 10000 ; residualBanadiwdth = 8218------ 
+SharingSets---
+ 
+--------Link166 : capacity = 10000 ; residualBanadiwdth = 8222------ 
+SharingSets---
+ 
+--------Link167 : capacity = 10000 ; residualBanadiwdth = 8088------ 
+SharingSets---
+ 
+--------Link168 : capacity = 10000 ; residualBanadiwdth = 9024------ 
+SharingSets---
+ 
+--------Link169 : capacity = 10000 ; residualBanadiwdth = 8133------ 
+SharingSets---
+ 
+--------Link170 : capacity = 10000 ; residualBanadiwdth = 9304------ 
+SharingSets---
+ 
+--------Link171 : capacity = 10000 ; residualBanadiwdth = 8348------ 
+SharingSets---
+ 
+--------Link172 : capacity = 10000 ; residualBanadiwdth = 8560------ 
+SharingSets---
+ 
+--------Link173 : capacity = 10000 ; residualBanadiwdth = 8560------ 
+SharingSets---
+ 
+--------Link174 : capacity = 10000 ; residualBanadiwdth = 8018------ 
+SharingSets---
+ 
+--------Link175 : capacity = 10000 ; residualBanadiwdth = 8289------ 
+SharingSets---
+ 
+--------Link176 : capacity = 10000 ; residualBanadiwdth = 8025------ 
+SharingSets---
+ 
+--------Link177 : capacity = 10000 ; residualBanadiwdth = 8332------ 
+SharingSets---
+ 
+--------Link178 : capacity = 10000 ; residualBanadiwdth = 8195------ 
+SharingSets---
+ 
+--------Link179 : capacity = 10000 ; residualBanadiwdth = 8105------ 
+SharingSets---
+ 
+--------Link180 : capacity = 10000 ; residualBanadiwdth = 8092------ 
+SharingSets---
+ 
+--------Link181 : capacity = 10000 ; residualBanadiwdth = 8435------ 
+SharingSets---
+ 
+--------Link182 : capacity = 10000 ; residualBanadiwdth = 8064------ 
+SharingSets---
+ 
+--------Link183 : capacity = 10000 ; residualBanadiwdth = 8064------ 
+SharingSets---
+ 
+--------Link184 : capacity = 10000 ; residualBanadiwdth = 8494------ 
+SharingSets---
+ 
+--------Link185 : capacity = 10000 ; residualBanadiwdth = 8530------ 
+SharingSets---
+ 
+--------Link186 : capacity = 10000 ; residualBanadiwdth = 8064------ 
+SharingSets---
+ 
+--------Link187 : capacity = 10000 ; residualBanadiwdth = 8064------ 
+SharingSets---
+ 
+--------Link188 : capacity = 10000 ; residualBanadiwdth = 8857------ 
+SharingSets---
+ 
+--------Link189 : capacity = 10000 ; residualBanadiwdth = 9032------ 
+SharingSets---
+ 
+--------Link190 : capacity = 10000 ; residualBanadiwdth = 9148------ 
+SharingSets---
+ 
+--------Link191 : capacity = 10000 ; residualBanadiwdth = 10000------ 
+SharingSets---
+ 
+--------Link192 : capacity = 10000 ; residualBanadiwdth = 6012------ 
+SharingSets---
+ 
+--------Link193 : capacity = 10000 ; residualBanadiwdth = 6012------ 
+SharingSets---
+ 
+--------Link194 : capacity = 10000 ; residualBanadiwdth = 6025------ 
+SharingSets---
+ 
+--------Link195 : capacity = 10000 ; residualBanadiwdth = 8473------ 
+SharingSets---
+ 
+--------Link196 : capacity = 10000 ; residualBanadiwdth = 6064------ 
+SharingSets---
+ 
+--------Link197 : capacity = 10000 ; residualBanadiwdth = 6064------ 
+SharingSets---
+ 
+--------Link198 : capacity = 10000 ; residualBanadiwdth = 6859------ 
+SharingSets---
+ 
+--------Link199 : capacity = 10000 ; residualBanadiwdth = 6114------ 
+SharingSets---
+ 
+--------Link200 : capacity = 10000 ; residualBanadiwdth = 7048------ 
+SharingSets---
+ 
+--------Link201 : capacity = 10000 ; residualBanadiwdth = 6063------ 
+SharingSets---
+ 
+--------Link202 : capacity = 10000 ; residualBanadiwdth = 6084------ 
+SharingSets---
+ 
+--------Link203 : capacity = 10000 ; residualBanadiwdth = 6150------ 
+SharingSets---
+ 
+--------Link204 : capacity = 10000 ; residualBanadiwdth = 8668------ 
+SharingSets---
+ 
+--------Link205 : capacity = 10000 ; residualBanadiwdth = 6562------ 
+SharingSets---
+ 
+--------Link206 : capacity = 10000 ; residualBanadiwdth = 6592------ 
+SharingSets---
+ 
+--------Link207 : capacity = 10000 ; residualBanadiwdth = 6477------ 
+SharingSets---
+ 
+--------Link208 : capacity = 10000 ; residualBanadiwdth = 7224------ 
+SharingSets---
+ 
+--------Link209 : capacity = 10000 ; residualBanadiwdth = 6360------ 
+SharingSets---
+ 
+--------Link210 : capacity = 10000 ; residualBanadiwdth = 6436------ 
+SharingSets---
+ 
+--------Link211 : capacity = 10000 ; residualBanadiwdth = 6310------ 
+SharingSets---
+ 
+--------Link212 : capacity = 10000 ; residualBanadiwdth = 9109------ 
+SharingSets---
+ 
+--------Link213 : capacity = 10000 ; residualBanadiwdth = 9044------ 
+SharingSets---
+ 
+--------Link214 : capacity = 10000 ; residualBanadiwdth = 9520------ 
+SharingSets---
+ 
+--------Link215 : capacity = 10000 ; residualBanadiwdth = 6985------ 
+SharingSets---
+ 
+--------Link216 : capacity = 10000 ; residualBanadiwdth = 6357------ 
+SharingSets---
+ 
+--------Link217 : capacity = 10000 ; residualBanadiwdth = 6300------ 
+SharingSets---
+ 
+--------Link218 : capacity = 10000 ; residualBanadiwdth = 6527------ 
+SharingSets---
+ 
+--------Link219 : capacity = 10000 ; residualBanadiwdth = 6128------ 
+SharingSets---
+ 
+--------Link220 : capacity = 10000 ; residualBanadiwdth = 7620------ 
+SharingSets---
+ 
+--------Link221 : capacity = 10000 ; residualBanadiwdth = 6128------ 
+SharingSets---
+ 
+--------Link222 : capacity = 10000 ; residualBanadiwdth = 7889------ 
+SharingSets---
+ 
+--------Link223 : capacity = 10000 ; residualBanadiwdth = 9148------ 
+SharingSets---
+Nb of Rejected request before 2nd run :46 Nb of Rejected request After 2nd run :46
+---- Revenue (if offline mode, it is the revenue for the initial set):19020.951 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+---- Revenue (if offline mode, it is the revenue after embedding the rejected set):19020.951 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+------------------ Execution of : bandwidthShareModel -------------------
+ 
+---- ExecutionTime:131 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate for the initial set )79.0 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate after embedding  the rejected set)100.0 -----
+ 
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain for the initial set :35.2735646787898 bandwidth can be shared :12593reserved shared bandwidth 8151
+
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain after trying to embed the rejected requests :35.2735646787898 bandwidth can be shared :12593reserved shared bandwidth 8151
+==================================================================================================================================
+
+
+---------------------------------------load: 10.0--------set nb :3----------------------
+ 
+------------------------------------------------------------ Poisson distribution with | load :10.0 | Arrival Rate = 100.0 | Departure Rate = 10.0----------------------------------------------------------------------
+public double[] arrivals = {0.0,0.015060895267932238,0.015694447298748804,0.026829194866951463,0.02867099023997707,0.050497316020484115,0.05875637997242766,0.06135481548261614,0.08245645054470396,0.14400458684410353,0.15187247137215348,0.15284394928781406,0.1596701809552221,0.1609116873453063,0.16779709208862048,0.1713647741287359,0.1720041981096691,0.19058635379678063,0.1908720215071354,0.19154320506877123,0.20978945034740948,0.23343865546682951,0.24114553116886436,0.2531176123537876,0.25546616330796307,0.27292399114512994,0.2740686626691797,0.2758511276688354,0.300724114679275,0.3026564327975079,0.30388490446231703,0.3069277298581455,0.31981065881667026,0.3248774602371506,0.32553073926461723,0.3302352368868776,0.34105425900109515,0.3440438108176466,0.350747660505705,0.37232825373828254,0.3773109894718609,0.37838945773373595,0.3906170546184407,0.3977491022172666,0.4069105365157073,0.40850771415243814,0.41024990448353593,0.45152783801004215,0.47053930586677295,0.4840513283873852,0.49654567099507335,0.4997419297210262,0.5198700254572912,0.5237475485086838,0.5301422911928239,0.5363364182904602,0.5375805319106587,0.5444291469965279,0.5512291043008273,0.5647279544167998,0.5823491165187273,0.5862798671841842,0.6011736612301537,0.6117067721360706,0.6119445764607491,0.6162203068149144,0.6194969521523197,0.6399852925929805,0.6503239808608345,0.673365153571688,0.7070285177433951,0.721246004708648,0.7375551742471982,0.748667601522758,0.7491167325824623,0.7559173981755527,0.7597435963398622,0.7701792155134136,0.7741822910080197,0.7834413354484583,0.8205886070116938,0.8273674821783749,0.8500146060748707,0.8655338558090093,0.8662004828186589,0.8662273110620563,0.8712917681137442,0.8726387706977446,0.924769996299957,0.9348405490342827,0.9644929206430414,0.9786977260717316,0.9788717512478974,0.9903781582168121,0.9915724399417761,0.9929452298342573,0.9929475695902663,1.006885389229134,1.0086911730044938,1.015166000278697, }; 
+public double[] departures = {0.40996308987684743,0.07467872646027054,0.06272097293195955,0.03550316737517707,0.1658259313823966,0.05915100884185998,0.22480472199571036,0.15658851412958188,0.11010743016180782,0.5382724705067655,0.15543544509705312,0.36750164101195004,0.28701368713927616,0.24435556911272985,0.29403319848516374,0.17907472750606354,0.18562983245720618,0.4567634479318931,0.19279552215695023,0.34446730655351454,0.3803594040299798,0.32729474109734535,0.28244144181877257,0.31639798874437247,0.274457031678758,0.34179611234122786,0.31360245330686054,0.4508363791776878,0.4870130868059537,0.3202942521073248,0.48616443640232554,0.31655229099862625,0.5253684301199137,0.5010718277895906,0.49975864757576993,0.3424218735636436,0.43866489740401526,0.4489766079014903,0.4869347884312319,0.40389802406738956,0.429992491667041,0.40763988295020803,0.41959173874055367,0.5285398009631608,0.48507673928418393,0.4127172341479979,0.5311011055644537,0.6129259291160065,0.5383232206055626,0.5863557892675852,0.5623525248071111,0.5215945507325386,0.5245621313898797,0.5590322308924242,0.630782963427716,0.604710010774056,0.6870381270969792,0.7986120302710673,0.5980969371348952,0.607188457039293,0.6850970611281955,1.1489056960328292,0.6722048223021461,0.6404693528610735,0.8489491888521841,0.6566949662039137,0.8124330216597667,1.034370326474976,0.665360701793781,0.8292543726360077,0.7371106692198843,0.9362200074901292,0.8554101229257544,1.0169969139759512,1.361764009842319,0.8641994555741673,0.8132630385384076,0.8077573558298665,0.7746030479490447,0.9089570823882018,0.8661590979193557,0.9159473765315007,0.9498843415905112,0.886860374401176,0.8751785648715986,0.8934325021649032,0.9260405819193082,0.9231107493039161,0.9673652867933463,1.1554264311653175,1.0406349723199662,1.3204616061143801,0.9802974950382631,1.0245934666284349,1.0153058158773742,1.2304879282339651,1.0274706395260753,1.0317509174999493,1.0773831772763214,1.0498556760134752,};
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+==================================================================================================================================
+  ---------------------------------------------------------------------- Fat tree network of ------------------------------------------------------------------------------ 
+ ----128 Servers----6 VM per server----
+ ----2 Servers per TOR switch (64 TOR)----
+ ----2 of TOR switch per Aggregate (32 Aggregate)----
+ ----32 Aggregate per core (1 core )----
+ Links capacity : server-TOR = 1000 | TOR-AGG =  10000 | AGG-Core = 10000 ----
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+--------Link0 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link1 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link2 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link3 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link4 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link5 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link6 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link7 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link8 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link9 : capacity = 1000 ; residualBanadiwdth = 90------ 
+SharingSets---
+ 
+--------Link10 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link11 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link12 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link13 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link14 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link15 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link16 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link17 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link18 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link19 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link20 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link21 : capacity = 1000 ; residualBanadiwdth = 12------ 
+SharingSets---
+ 
+--------Link22 : capacity = 1000 ; residualBanadiwdth = 334------ 
+SharingSets---
+ 
+--------Link23 : capacity = 1000 ; residualBanadiwdth = 334------ 
+SharingSets---
+ 
+--------Link24 : capacity = 1000 ; residualBanadiwdth = 430------ 
+SharingSets---
+ 
+--------Link25 : capacity = 1000 ; residualBanadiwdth = 430------ 
+SharingSets---
+ 
+--------Link26 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link27 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link28 : capacity = 1000 ; residualBanadiwdth = 328------ 
+SharingSets---
+ 
+--------Link29 : capacity = 1000 ; residualBanadiwdth = 328------ 
+SharingSets---
+ 
+--------Link30 : capacity = 1000 ; residualBanadiwdth = 328------ 
+SharingSets---
+ 
+--------Link31 : capacity = 1000 ; residualBanadiwdth = 328------ 
+SharingSets---
+ 
+--------Link32 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link33 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link34 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link35 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link36 : capacity = 1000 ; residualBanadiwdth = 88------ 
+SharingSets---
+ 
+--------Link37 : capacity = 1000 ; residualBanadiwdth = 88------ 
+SharingSets---
+ 
+--------Link38 : capacity = 1000 ; residualBanadiwdth = 88------ 
+SharingSets---
+ 
+--------Link39 : capacity = 1000 ; residualBanadiwdth = 88------ 
+SharingSets---
+ 
+--------Link40 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link41 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link42 : capacity = 1000 ; residualBanadiwdth = 28------ 
+SharingSets---
+ 
+--------Link43 : capacity = 1000 ; residualBanadiwdth = 28------ 
+SharingSets---
+ 
+--------Link44 : capacity = 1000 ; residualBanadiwdth = 30------ 
+SharingSets---
+ 
+--------Link45 : capacity = 1000 ; residualBanadiwdth = 30------ 
+SharingSets---
+ 
+--------Link46 : capacity = 1000 ; residualBanadiwdth = 30------ 
+SharingSets---
+ 
+--------Link47 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link48 : capacity = 1000 ; residualBanadiwdth = 28------ 
+SharingSets---
+ 
+--------Link49 : capacity = 1000 ; residualBanadiwdth = 47------ 
+SharingSets---
+ 
+--------Link50 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link51 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link52 : capacity = 1000 ; residualBanadiwdth = 25------ 
+SharingSets---
+ 
+--------Link53 : capacity = 1000 ; residualBanadiwdth = 25------ 
+SharingSets---
+ 
+--------Link54 : capacity = 1000 ; residualBanadiwdth = 25------ 
+SharingSets---
+ 
+--------Link55 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link56 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link57 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link58 : capacity = 1000 ; residualBanadiwdth = 0------ 
+SharingSets---
+ 
+--------Link59 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link60 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link61 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link62 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link63 : capacity = 1000 ; residualBanadiwdth = 152------ 
+SharingSets---
+ 
+--------Link64 : capacity = 1000 ; residualBanadiwdth = 48------ 
+SharingSets---
+ 
+--------Link65 : capacity = 1000 ; residualBanadiwdth = 48------ 
+SharingSets---
+ 
+--------Link66 : capacity = 1000 ; residualBanadiwdth = 34------ 
+SharingSets---
+ 
+--------Link67 : capacity = 1000 ; residualBanadiwdth = 62------ 
+SharingSets---
+ 
+--------Link68 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link69 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link70 : capacity = 1000 ; residualBanadiwdth = 11------ 
+SharingSets---
+ 
+--------Link71 : capacity = 1000 ; residualBanadiwdth = 114------ 
+SharingSets---
+ 
+--------Link72 : capacity = 1000 ; residualBanadiwdth = 76------ 
+SharingSets---
+ 
+--------Link73 : capacity = 1000 ; residualBanadiwdth = 76------ 
+SharingSets---
+ 
+--------Link74 : capacity = 1000 ; residualBanadiwdth = 76------ 
+SharingSets---
+ 
+--------Link75 : capacity = 1000 ; residualBanadiwdth = 76------ 
+SharingSets---
+ 
+--------Link76 : capacity = 1000 ; residualBanadiwdth = 164------ 
+SharingSets---
+ 
+--------Link77 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link78 : capacity = 1000 ; residualBanadiwdth = 34------ 
+SharingSets---
+ 
+--------Link79 : capacity = 1000 ; residualBanadiwdth = 147------ 
+SharingSets---
+ 
+--------Link80 : capacity = 1000 ; residualBanadiwdth = 34------ 
+SharingSets---
+ 
+--------Link81 : capacity = 1000 ; residualBanadiwdth = 602------ 
+SharingSets---
+ 
+--------Link82 : capacity = 1000 ; residualBanadiwdth = 244------ 
+SharingSets---
+ 
+--------Link83 : capacity = 1000 ; residualBanadiwdth = 737------ 
+SharingSets---
+ 
+--------Link84 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link85 : capacity = 1000 ; residualBanadiwdth = 119------ 
+SharingSets---
+ 
+--------Link86 : capacity = 1000 ; residualBanadiwdth = 382------ 
+SharingSets---
+ 
+--------Link87 : capacity = 1000 ; residualBanadiwdth = 382------ 
+SharingSets---
+ 
+--------Link88 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link89 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link90 : capacity = 1000 ; residualBanadiwdth = 211------ 
+SharingSets---
+ 
+--------Link91 : capacity = 1000 ; residualBanadiwdth = 18------ 
+SharingSets---
+ 
+--------Link92 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link93 : capacity = 1000 ; residualBanadiwdth = 206------ 
+SharingSets---
+ 
+--------Link94 : capacity = 1000 ; residualBanadiwdth = 206------ 
+SharingSets---
+ 
+--------Link95 : capacity = 1000 ; residualBanadiwdth = 211------ 
+SharingSets---
+ 
+--------Link96 : capacity = 1000 ; residualBanadiwdth = 36------ 
+SharingSets---
+ 
+--------Link97 : capacity = 1000 ; residualBanadiwdth = 211------ 
+SharingSets---
+ 
+--------Link98 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link99 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link100 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link101 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link102 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link103 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link104 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link105 : capacity = 1000 ; residualBanadiwdth = 211------ 
+SharingSets---
+ 
+--------Link106 : capacity = 1000 ; residualBanadiwdth = 328------ 
+SharingSets---
+ 
+--------Link107 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link108 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link109 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link110 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link111 : capacity = 1000 ; residualBanadiwdth = 25------ 
+SharingSets---
+ 
+--------Link112 : capacity = 1000 ; residualBanadiwdth = 105------ 
+SharingSets---
+ 
+--------Link113 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link114 : capacity = 1000 ; residualBanadiwdth = 232------ 
+SharingSets---
+ 
+--------Link115 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link116 : capacity = 1000 ; residualBanadiwdth = 34------ 
+SharingSets---
+ 
+--------Link117 : capacity = 1000 ; residualBanadiwdth = 36------ 
+SharingSets---
+ 
+--------Link118 : capacity = 1000 ; residualBanadiwdth = 36------ 
+SharingSets---
+ 
+--------Link119 : capacity = 1000 ; residualBanadiwdth = 36------ 
+SharingSets---
+ 
+--------Link120 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link121 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link122 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link123 : capacity = 1000 ; residualBanadiwdth = 13------ 
+SharingSets---
+ 
+--------Link124 : capacity = 1000 ; residualBanadiwdth = 52------ 
+SharingSets---
+ 
+--------Link125 : capacity = 1000 ; residualBanadiwdth = 52------ 
+SharingSets---
+ 
+--------Link126 : capacity = 1000 ; residualBanadiwdth = 342------ 
+SharingSets---
+ 
+--------Link127 : capacity = 1000 ; residualBanadiwdth = 52------ 
+SharingSets---
+ 
+--------Link128 : capacity = 10000 ; residualBanadiwdth = 8180------ 
+SharingSets---
+ 
+--------Link129 : capacity = 10000 ; residualBanadiwdth = 8180------ 
+SharingSets---
+ 
+--------Link130 : capacity = 10000 ; residualBanadiwdth = 8180------ 
+SharingSets---
+ 
+--------Link131 : capacity = 10000 ; residualBanadiwdth = 8180------ 
+SharingSets---
+ 
+--------Link132 : capacity = 10000 ; residualBanadiwdth = 8180------ 
+SharingSets---
+ 
+--------Link133 : capacity = 10000 ; residualBanadiwdth = 8024------ 
+SharingSets---
+ 
+--------Link134 : capacity = 10000 ; residualBanadiwdth = 8024------ 
+SharingSets---
+ 
+--------Link135 : capacity = 10000 ; residualBanadiwdth = 8024------ 
+SharingSets---
+ 
+--------Link136 : capacity = 10000 ; residualBanadiwdth = 8024------ 
+SharingSets---
+ 
+--------Link137 : capacity = 10000 ; residualBanadiwdth = 8024------ 
+SharingSets---
+ 
+--------Link138 : capacity = 10000 ; residualBanadiwdth = 8024------ 
+SharingSets---
+ 
+--------Link139 : capacity = 10000 ; residualBanadiwdth = 9334------ 
+SharingSets---
+ 
+--------Link140 : capacity = 10000 ; residualBanadiwdth = 9430------ 
+SharingSets---
+ 
+--------Link141 : capacity = 10000 ; residualBanadiwdth = 8030------ 
+SharingSets---
+ 
+--------Link142 : capacity = 10000 ; residualBanadiwdth = 8656------ 
+SharingSets---
+ 
+--------Link143 : capacity = 10000 ; residualBanadiwdth = 8656------ 
+SharingSets---
+ 
+--------Link144 : capacity = 10000 ; residualBanadiwdth = 8020------ 
+SharingSets---
+ 
+--------Link145 : capacity = 10000 ; residualBanadiwdth = 8000------ 
+SharingSets---
+ 
+--------Link146 : capacity = 10000 ; residualBanadiwdth = 8632------ 
+SharingSets---
+ 
+--------Link147 : capacity = 10000 ; residualBanadiwdth = 8632------ 
+SharingSets---
+ 
+--------Link148 : capacity = 10000 ; residualBanadiwdth = 8087------ 
+SharingSets---
+ 
+--------Link149 : capacity = 10000 ; residualBanadiwdth = 8272------ 
+SharingSets---
+ 
+--------Link150 : capacity = 10000 ; residualBanadiwdth = 8274------ 
+SharingSets---
+ 
+--------Link151 : capacity = 10000 ; residualBanadiwdth = 8104------ 
+SharingSets---
+ 
+--------Link152 : capacity = 10000 ; residualBanadiwdth = 8075------ 
+SharingSets---
+ 
+--------Link153 : capacity = 10000 ; residualBanadiwdth = 8040------ 
+SharingSets---
+ 
+--------Link154 : capacity = 10000 ; residualBanadiwdth = 8245------ 
+SharingSets---
+ 
+--------Link155 : capacity = 10000 ; residualBanadiwdth = 8075------ 
+SharingSets---
+ 
+--------Link156 : capacity = 10000 ; residualBanadiwdth = 8040------ 
+SharingSets---
+ 
+--------Link157 : capacity = 10000 ; residualBanadiwdth = 8020------ 
+SharingSets---
+ 
+--------Link158 : capacity = 10000 ; residualBanadiwdth = 8040------ 
+SharingSets---
+ 
+--------Link159 : capacity = 10000 ; residualBanadiwdth = 8172------ 
+SharingSets---
+ 
+--------Link160 : capacity = 10000 ; residualBanadiwdth = 8238------ 
+SharingSets---
+ 
+--------Link161 : capacity = 10000 ; residualBanadiwdth = 8096------ 
+SharingSets---
+ 
+--------Link162 : capacity = 10000 ; residualBanadiwdth = 9105------ 
+SharingSets---
+ 
+--------Link163 : capacity = 10000 ; residualBanadiwdth = 8125------ 
+SharingSets---
+ 
+--------Link164 : capacity = 10000 ; residualBanadiwdth = 8845------ 
+SharingSets---
+ 
+--------Link165 : capacity = 10000 ; residualBanadiwdth = 8845------ 
+SharingSets---
+ 
+--------Link166 : capacity = 10000 ; residualBanadiwdth = 9164------ 
+SharingSets---
+ 
+--------Link167 : capacity = 10000 ; residualBanadiwdth = 8181------ 
+SharingSets---
+ 
+--------Link168 : capacity = 10000 ; residualBanadiwdth = 8636------ 
+SharingSets---
+ 
+--------Link169 : capacity = 10000 ; residualBanadiwdth = 8981------ 
+SharingSets---
+ 
+--------Link170 : capacity = 10000 ; residualBanadiwdth = 9119------ 
+SharingSets---
+ 
+--------Link171 : capacity = 10000 ; residualBanadiwdth = 9382------ 
+SharingSets---
+ 
+--------Link172 : capacity = 10000 ; residualBanadiwdth = 9018------ 
+SharingSets---
+ 
+--------Link173 : capacity = 10000 ; residualBanadiwdth = 8229------ 
+SharingSets---
+ 
+--------Link174 : capacity = 10000 ; residualBanadiwdth = 8750------ 
+SharingSets---
+ 
+--------Link175 : capacity = 10000 ; residualBanadiwdth = 8417------ 
+SharingSets---
+ 
+--------Link176 : capacity = 10000 ; residualBanadiwdth = 8247------ 
+SharingSets---
+ 
+--------Link177 : capacity = 10000 ; residualBanadiwdth = 8464------ 
+SharingSets---
+ 
+--------Link178 : capacity = 10000 ; residualBanadiwdth = 8464------ 
+SharingSets---
+ 
+--------Link179 : capacity = 10000 ; residualBanadiwdth = 9232------ 
+SharingSets---
+ 
+--------Link180 : capacity = 10000 ; residualBanadiwdth = 9211------ 
+SharingSets---
+ 
+--------Link181 : capacity = 10000 ; residualBanadiwdth = 9328------ 
+SharingSets---
+ 
+--------Link182 : capacity = 10000 ; residualBanadiwdth = 9232------ 
+SharingSets---
+ 
+--------Link183 : capacity = 10000 ; residualBanadiwdth = 9025------ 
+SharingSets---
+ 
+--------Link184 : capacity = 10000 ; residualBanadiwdth = 9105------ 
+SharingSets---
+ 
+--------Link185 : capacity = 10000 ; residualBanadiwdth = 9232------ 
+SharingSets---
+ 
+--------Link186 : capacity = 10000 ; residualBanadiwdth = 8070------ 
+SharingSets---
+ 
+--------Link187 : capacity = 10000 ; residualBanadiwdth = 9036------ 
+SharingSets---
+ 
+--------Link188 : capacity = 10000 ; residualBanadiwdth = 8355------ 
+SharingSets---
+ 
+--------Link189 : capacity = 10000 ; residualBanadiwdth = 8355------ 
+SharingSets---
+ 
+--------Link190 : capacity = 10000 ; residualBanadiwdth = 9052------ 
+SharingSets---
+ 
+--------Link191 : capacity = 10000 ; residualBanadiwdth = 8394------ 
+SharingSets---
+ 
+--------Link192 : capacity = 10000 ; residualBanadiwdth = 6360------ 
+SharingSets---
+ 
+--------Link193 : capacity = 10000 ; residualBanadiwdth = 6360------ 
+SharingSets---
+ 
+--------Link194 : capacity = 10000 ; residualBanadiwdth = 6204------ 
+SharingSets---
+ 
+--------Link195 : capacity = 10000 ; residualBanadiwdth = 6048------ 
+SharingSets---
+ 
+--------Link196 : capacity = 10000 ; residualBanadiwdth = 6048------ 
+SharingSets---
+ 
+--------Link197 : capacity = 10000 ; residualBanadiwdth = 7358------ 
+SharingSets---
+ 
+--------Link198 : capacity = 10000 ; residualBanadiwdth = 8600------ 
+SharingSets---
+ 
+--------Link199 : capacity = 10000 ; residualBanadiwdth = 9328------ 
+SharingSets---
+ 
+--------Link200 : capacity = 10000 ; residualBanadiwdth = 7770------ 
+SharingSets---
+ 
+--------Link201 : capacity = 10000 ; residualBanadiwdth = 9544------ 
+SharingSets---
+ 
+--------Link202 : capacity = 10000 ; residualBanadiwdth = 6359------ 
+SharingSets---
+ 
+--------Link203 : capacity = 10000 ; residualBanadiwdth = 6806------ 
+SharingSets---
+ 
+--------Link204 : capacity = 10000 ; residualBanadiwdth = 6115------ 
+SharingSets---
+ 
+--------Link205 : capacity = 10000 ; residualBanadiwdth = 8855------ 
+SharingSets---
+ 
+--------Link206 : capacity = 10000 ; residualBanadiwdth = 6060------ 
+SharingSets---
+ 
+--------Link207 : capacity = 10000 ; residualBanadiwdth = 6212------ 
+SharingSets---
+ 
+--------Link208 : capacity = 10000 ; residualBanadiwdth = 6618------ 
+SharingSets---
+ 
+--------Link209 : capacity = 10000 ; residualBanadiwdth = 8125------ 
+SharingSets---
+ 
+--------Link210 : capacity = 10000 ; residualBanadiwdth = 9769------ 
+SharingSets---
+ 
+--------Link211 : capacity = 10000 ; residualBanadiwdth = 7345------ 
+SharingSets---
+ 
+--------Link212 : capacity = 10000 ; residualBanadiwdth = 7617------ 
+SharingSets---
+ 
+--------Link213 : capacity = 10000 ; residualBanadiwdth = 9737------ 
+SharingSets---
+ 
+--------Link214 : capacity = 10000 ; residualBanadiwdth = 9211------ 
+SharingSets---
+ 
+--------Link215 : capacity = 10000 ; residualBanadiwdth = 8229------ 
+SharingSets---
+ 
+--------Link216 : capacity = 10000 ; residualBanadiwdth = 6711------ 
+SharingSets---
+ 
+--------Link217 : capacity = 10000 ; residualBanadiwdth = 7696------ 
+SharingSets---
+ 
+--------Link218 : capacity = 10000 ; residualBanadiwdth = 8539------ 
+SharingSets---
+ 
+--------Link219 : capacity = 10000 ; residualBanadiwdth = 8257------ 
+SharingSets---
+ 
+--------Link220 : capacity = 10000 ; residualBanadiwdth = 8337------ 
+SharingSets---
+ 
+--------Link221 : capacity = 10000 ; residualBanadiwdth = 8070------ 
+SharingSets---
+ 
+--------Link222 : capacity = 10000 ; residualBanadiwdth = 9342------ 
+SharingSets---
+ 
+--------Link223 : capacity = 10000 ; residualBanadiwdth = 9342------ 
+SharingSets---
+Nb of Rejected request before 2nd run :25 Nb of Rejected request After 2nd run :23
+---- Revenue (if offline mode, it is the revenue for the initial set):22921.146 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+---- Revenue (if offline mode, it is the revenue after embedding the rejected set):24061.203 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+------------------ Execution of : bandwidthShareModel -------------------
+ 
+---- ExecutionTime:6041 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate for the initial set )69.0 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate after embedding  the rejected set)92.0 -----
+ 
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain for the initial set :44.93953488372093 bandwidth can be shared :10750reserved shared bandwidth 5919
+
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain after trying to embed the rejected requests :40.86744495345057 bandwidth can be shared :13534reserved shared bandwidth 8003
+==================================================================================================================================
+
+
+---------------------------------------load: 10.0--------set nb :4----------------------
+ 
+------------------------------------------------------------ Poisson distribution with | load :10.0 | Arrival Rate = 100.0 | Departure Rate = 10.0----------------------------------------------------------------------
+public double[] arrivals = {0.0,0.013841806317311325,0.014804789425796386,0.016611242250911193,0.02936872298304903,0.03360147551451277,0.08424985636837443,0.08765700746539525,0.09319918432686107,0.09867209969227034,0.11461363211028922,0.11577349433326643,0.11735347703766008,0.12113272214191662,0.15306695183520425,0.1684064715849162,0.19264580987670465,0.1937899581101277,0.21874456723736255,0.23292736814709952,0.24897979385893443,0.26917856006517515,0.270703208100148,0.3009506191004531,0.3141174411642692,0.31697120559675646,0.34495012026849603,0.34532674654026824,0.3509731301299149,0.3521328919511244,0.3608247881166303,0.3875048618753276,0.39519977729488426,0.3954421147968655,0.4005470531957322,0.40641737876739004,0.41511527854946595,0.42008815793565446,0.43040394760521966,0.43931456953802356,0.4412126741050054,0.44182466342667687,0.4434762887049312,0.4452093174131747,0.4489784303379256,0.4596112855502652,0.46391219691357993,0.4895115903453414,0.5050224110756157,0.5137926153186284,0.5314584203984445,0.5334167091598975,0.5493297332478365,0.5555948708746641,0.5626141864669059,0.5641706294171105,0.5681094165118661,0.575131339704315,0.5780474230888116,0.5795685867657057,0.593764162095631,0.6023272019454652,0.6059290691921291,0.6064681639929848,0.6084338169373129,0.6266453932689694,0.6415056606783553,0.6556152564762627,0.6573060267253512,0.6593792502753585,0.6658858869183555,0.667896766207453,0.6684070864250482,0.6741137934346534,0.6935314003382016,0.6950313432989071,0.7003188113131718,0.7066340417807078,0.7076481254013309,0.7357351363698117,0.7477422142935127,0.7674199106574078,0.7786743556959056,0.7793749249860291,0.7871280432673915,0.7885583081864211,0.7997782558328336,0.8034403035568937,0.8059617613740625,0.818866706835024,0.8724364637152563,0.9342353166516922,0.9370182507721135,0.9393730356240307,0.9469504292561521,0.9630728863832866,0.9810737018923638,0.9909201154170608,0.9936993554112464,1.0101454017183058, }; 
+public double[] departures = {0.0032304321788493417,0.06332782240637895,0.0526032160522322,0.11820277671669335,0.0775740745435913,0.1727902053441066,0.10030153522280798,0.09301009946451234,0.1268025390575075,0.2601034874217497,0.27768916018633005,0.21489494082232843,0.3352333911507718,0.22280521729727631,0.2195312730509908,0.20149462325848216,0.410943066998415,0.2837163168452189,0.48005671060800414,0.24132804093585836,0.3127589548706746,0.5704951688224853,0.3045132491553291,0.5704967063658658,0.6948824501451552,0.36436720946291545,0.35046452216485335,0.3846576040393493,0.4316723276279645,0.3946239567051508,0.4215359521183164,0.39556825855471184,0.4445041790257593,0.4176428371647475,0.510956188029256,0.4460903624111411,0.5691772165355707,0.44051288356157786,0.446200305310172,0.5040853377063176,0.6872454434772438,0.5271538783609926,0.8529416010512894,0.45352712228306064,0.6604147493356661,0.578936989862819,0.5013254815246578,0.7413600039705606,0.5449593353582348,0.5590845564754865,0.5801412053174603,0.5677721393840904,0.5734160944610471,0.5892810108282084,0.6422909190072148,0.6328401862831449,0.5790728406516349,0.7898815789613234,0.6970375265887313,0.6088673451421219,0.6262737771280956,0.7209189221460844,0.7030581787034219,0.6359392058148139,0.6540537241482353,0.7522393594090809,0.8217638911820065,0.6580905639152205,0.8079657074963408,0.745822384892417,0.7830999821480471,0.6707198390707615,0.7171072720543362,0.6786588578852453,0.9906890331539917,0.7224284072012198,0.8079026420941333,0.7962079672967747,0.7410550093914309,0.7421200806508802,0.8543964884534524,0.9390710608118189,0.8202686580444551,0.7900777595477712,0.8113094668555105,0.8291495473836318,0.8483525437750841,0.846475069407428,0.8888668060836535,0.9977488177477165,0.9960414216550968,0.9544416712587332,0.9473143400493078,1.0113466838230294,1.069234719146465,1.0024398495088989,1.0758009220265128,1.1262682189286364,1.013054408781095,1.1925943289158056,};
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+==================================================================================================================================
+  ---------------------------------------------------------------------- Fat tree network of ------------------------------------------------------------------------------ 
+ ----128 Servers----6 VM per server----
+ ----2 Servers per TOR switch (64 TOR)----
+ ----2 of TOR switch per Aggregate (32 Aggregate)----
+ ----32 Aggregate per core (1 core )----
+ Links capacity : server-TOR = 1000 | TOR-AGG =  10000 | AGG-Core = 10000 ----
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+--------Link0 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link1 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link2 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link3 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link4 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link5 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link6 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link7 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link8 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link9 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link10 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link11 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link12 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link13 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link14 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link15 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link16 : capacity = 1000 ; residualBanadiwdth = 72------ 
+SharingSets---
+ 
+--------Link17 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link18 : capacity = 1000 ; residualBanadiwdth = 123------ 
+SharingSets---
+ 
+--------Link19 : capacity = 1000 ; residualBanadiwdth = 123------ 
+SharingSets---
+ 
+--------Link20 : capacity = 1000 ; residualBanadiwdth = 170------ 
+SharingSets---
+ 
+--------Link21 : capacity = 1000 ; residualBanadiwdth = 170------ 
+SharingSets---
+ 
+--------Link22 : capacity = 1000 ; residualBanadiwdth = 8------ 
+SharingSets---
+ 
+--------Link23 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link24 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link25 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link26 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link27 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link28 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link29 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link30 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link31 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link32 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link33 : capacity = 1000 ; residualBanadiwdth = 50------ 
+SharingSets---
+ 
+--------Link34 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link35 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link36 : capacity = 1000 ; residualBanadiwdth = 6------ 
+SharingSets---
+ 
+--------Link37 : capacity = 1000 ; residualBanadiwdth = 6------ 
+SharingSets---
+ 
+--------Link38 : capacity = 1000 ; residualBanadiwdth = 6------ 
+SharingSets---
+ 
+--------Link39 : capacity = 1000 ; residualBanadiwdth = 6------ 
+SharingSets---
+ 
+--------Link40 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link41 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link42 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link43 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link44 : capacity = 1000 ; residualBanadiwdth = 102------ 
+SharingSets---
+ 
+--------Link45 : capacity = 1000 ; residualBanadiwdth = 22------ 
+SharingSets---
+ 
+--------Link46 : capacity = 1000 ; residualBanadiwdth = 22------ 
+SharingSets---
+ 
+--------Link47 : capacity = 1000 ; residualBanadiwdth = 22------ 
+SharingSets---
+ 
+--------Link48 : capacity = 1000 ; residualBanadiwdth = 74------ 
+SharingSets---
+ 
+--------Link49 : capacity = 1000 ; residualBanadiwdth = 59------ 
+SharingSets---
+ 
+--------Link50 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link51 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link52 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link53 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link54 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link55 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link56 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link57 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link58 : capacity = 1000 ; residualBanadiwdth = 5------ 
+SharingSets---
+ 
+--------Link59 : capacity = 1000 ; residualBanadiwdth = 44------ 
+SharingSets---
+ 
+--------Link60 : capacity = 1000 ; residualBanadiwdth = 76------ 
+SharingSets---
+ 
+--------Link61 : capacity = 1000 ; residualBanadiwdth = 106------ 
+SharingSets---
+ 
+--------Link62 : capacity = 1000 ; residualBanadiwdth = 76------ 
+SharingSets---
+ 
+--------Link63 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link64 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link65 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link66 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link67 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link68 : capacity = 1000 ; residualBanadiwdth = 4------ 
+SharingSets---
+ 
+--------Link69 : capacity = 1000 ; residualBanadiwdth = 4------ 
+SharingSets---
+ 
+--------Link70 : capacity = 1000 ; residualBanadiwdth = 4------ 
+SharingSets---
+ 
+--------Link71 : capacity = 1000 ; residualBanadiwdth = 4------ 
+SharingSets---
+ 
+--------Link72 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link73 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link74 : capacity = 1000 ; residualBanadiwdth = 60------ 
+SharingSets---
+ 
+--------Link75 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link76 : capacity = 1000 ; residualBanadiwdth = 66------ 
+SharingSets---
+ 
+--------Link77 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link78 : capacity = 1000 ; residualBanadiwdth = 196------ 
+SharingSets---
+ 
+--------Link79 : capacity = 1000 ; residualBanadiwdth = 196------ 
+SharingSets---
+ 
+--------Link80 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link81 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link82 : capacity = 1000 ; residualBanadiwdth = 20------ 
+SharingSets---
+ 
+--------Link83 : capacity = 1000 ; residualBanadiwdth = 326------ 
+SharingSets---
+ 
+--------Link84 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link85 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link86 : capacity = 1000 ; residualBanadiwdth = 23------ 
+SharingSets---
+ 
+--------Link87 : capacity = 1000 ; residualBanadiwdth = 87------ 
+SharingSets---
+ 
+--------Link88 : capacity = 1000 ; residualBanadiwdth = 112------ 
+SharingSets---
+ 
+--------Link89 : capacity = 1000 ; residualBanadiwdth = 101------ 
+SharingSets---
+ 
+--------Link90 : capacity = 1000 ; residualBanadiwdth = 101------ 
+SharingSets---
+ 
+--------Link91 : capacity = 1000 ; residualBanadiwdth = 438------ 
+SharingSets---
+ 
+--------Link92 : capacity = 1000 ; residualBanadiwdth = 280------ 
+SharingSets---
+ 
+--------Link93 : capacity = 1000 ; residualBanadiwdth = 403------ 
+SharingSets---
+ 
+--------Link94 : capacity = 1000 ; residualBanadiwdth = 403------ 
+SharingSets---
+ 
+--------Link95 : capacity = 1000 ; residualBanadiwdth = 403------ 
+SharingSets---
+ 
+--------Link96 : capacity = 1000 ; residualBanadiwdth = 275------ 
+SharingSets---
+ 
+--------Link97 : capacity = 1000 ; residualBanadiwdth = 524------ 
+SharingSets---
+ 
+--------Link98 : capacity = 1000 ; residualBanadiwdth = 212------ 
+SharingSets---
+ 
+--------Link99 : capacity = 1000 ; residualBanadiwdth = 92------ 
+SharingSets---
+ 
+--------Link100 : capacity = 1000 ; residualBanadiwdth = 164------ 
+SharingSets---
+ 
+--------Link101 : capacity = 1000 ; residualBanadiwdth = 164------ 
+SharingSets---
+ 
+--------Link102 : capacity = 1000 ; residualBanadiwdth = 740------ 
+SharingSets---
+ 
+--------Link103 : capacity = 1000 ; residualBanadiwdth = 525------ 
+SharingSets---
+ 
+--------Link104 : capacity = 1000 ; residualBanadiwdth = 380------ 
+SharingSets---
+ 
+--------Link105 : capacity = 1000 ; residualBanadiwdth = 380------ 
+SharingSets---
+ 
+--------Link106 : capacity = 1000 ; residualBanadiwdth = 380------ 
+SharingSets---
+ 
+--------Link107 : capacity = 1000 ; residualBanadiwdth = 206------ 
+SharingSets---
+ 
+--------Link108 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link109 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link110 : capacity = 1000 ; residualBanadiwdth = 164------ 
+SharingSets---
+ 
+--------Link111 : capacity = 1000 ; residualBanadiwdth = 16------ 
+SharingSets---
+ 
+--------Link112 : capacity = 1000 ; residualBanadiwdth = 465------ 
+SharingSets---
+ 
+--------Link113 : capacity = 1000 ; residualBanadiwdth = 300------ 
+SharingSets---
+ 
+--------Link114 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link115 : capacity = 1000 ; residualBanadiwdth = 465------ 
+SharingSets---
+ 
+--------Link116 : capacity = 1000 ; residualBanadiwdth = 610------ 
+SharingSets---
+ 
+--------Link117 : capacity = 1000 ; residualBanadiwdth = 10------ 
+SharingSets---
+ 
+--------Link118 : capacity = 1000 ; residualBanadiwdth = 156------ 
+SharingSets---
+ 
+--------Link119 : capacity = 1000 ; residualBanadiwdth = 1000------ 
+SharingSets---
+ 
+--------Link120 : capacity = 1000 ; residualBanadiwdth = 310------ 
+SharingSets---
+ 
+--------Link121 : capacity = 1000 ; residualBanadiwdth = 310------ 
+SharingSets---
+ 
+--------Link122 : capacity = 1000 ; residualBanadiwdth = 310------ 
+SharingSets---
+ 
+--------Link123 : capacity = 1000 ; residualBanadiwdth = 540------ 
+SharingSets---
+ 
+--------Link124 : capacity = 1000 ; residualBanadiwdth = 310------ 
+SharingSets---
+ 
+--------Link125 : capacity = 1000 ; residualBanadiwdth = 568------ 
+SharingSets---
+ 
+--------Link126 : capacity = 1000 ; residualBanadiwdth = 94------ 
+SharingSets---
+ 
+--------Link127 : capacity = 1000 ; residualBanadiwdth = 326------ 
+SharingSets---
+ 
+--------Link128 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link129 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link130 : capacity = 10000 ; residualBanadiwdth = 8032------ 
+SharingSets---
+ 
+--------Link131 : capacity = 10000 ; residualBanadiwdth = 8144------ 
+SharingSets---
+ 
+--------Link132 : capacity = 10000 ; residualBanadiwdth = 8144------ 
+SharingSets---
+ 
+--------Link133 : capacity = 10000 ; residualBanadiwdth = 8144------ 
+SharingSets---
+ 
+--------Link134 : capacity = 10000 ; residualBanadiwdth = 8144------ 
+SharingSets---
+ 
+--------Link135 : capacity = 10000 ; residualBanadiwdth = 8144------ 
+SharingSets---
+ 
+--------Link136 : capacity = 10000 ; residualBanadiwdth = 8146------ 
+SharingSets---
+ 
+--------Link137 : capacity = 10000 ; residualBanadiwdth = 8411------ 
+SharingSets---
+ 
+--------Link138 : capacity = 10000 ; residualBanadiwdth = 8458------ 
+SharingSets---
+ 
+--------Link139 : capacity = 10000 ; residualBanadiwdth = 8082------ 
+SharingSets---
+ 
+--------Link140 : capacity = 10000 ; residualBanadiwdth = 8148------ 
+SharingSets---
+ 
+--------Link141 : capacity = 10000 ; residualBanadiwdth = 8148------ 
+SharingSets---
+ 
+--------Link142 : capacity = 10000 ; residualBanadiwdth = 8124------ 
+SharingSets---
+ 
+--------Link143 : capacity = 10000 ; residualBanadiwdth = 8100------ 
+SharingSets---
+ 
+--------Link144 : capacity = 10000 ; residualBanadiwdth = 8100------ 
+SharingSets---
+ 
+--------Link145 : capacity = 10000 ; residualBanadiwdth = 8188------ 
+SharingSets---
+ 
+--------Link146 : capacity = 10000 ; residualBanadiwdth = 8300------ 
+SharingSets---
+ 
+--------Link147 : capacity = 10000 ; residualBanadiwdth = 8300------ 
+SharingSets---
+ 
+--------Link148 : capacity = 10000 ; residualBanadiwdth = 8188------ 
+SharingSets---
+ 
+--------Link149 : capacity = 10000 ; residualBanadiwdth = 8114------ 
+SharingSets---
+ 
+--------Link150 : capacity = 10000 ; residualBanadiwdth = 8124------ 
+SharingSets---
+ 
+--------Link151 : capacity = 10000 ; residualBanadiwdth = 8044------ 
+SharingSets---
+ 
+--------Link152 : capacity = 10000 ; residualBanadiwdth = 8133------ 
+SharingSets---
+ 
+--------Link153 : capacity = 10000 ; residualBanadiwdth = 8088------ 
+SharingSets---
+ 
+--------Link154 : capacity = 10000 ; residualBanadiwdth = 8088------ 
+SharingSets---
+ 
+--------Link155 : capacity = 10000 ; residualBanadiwdth = 8088------ 
+SharingSets---
+ 
+--------Link156 : capacity = 10000 ; residualBanadiwdth = 8088------ 
+SharingSets---
+ 
+--------Link157 : capacity = 10000 ; residualBanadiwdth = 8049------ 
+SharingSets---
+ 
+--------Link158 : capacity = 10000 ; residualBanadiwdth = 8182------ 
+SharingSets---
+ 
+--------Link159 : capacity = 10000 ; residualBanadiwdth = 8136------ 
+SharingSets---
+ 
+--------Link160 : capacity = 10000 ; residualBanadiwdth = 8120------ 
+SharingSets---
+ 
+--------Link161 : capacity = 10000 ; residualBanadiwdth = 8120------ 
+SharingSets---
+ 
+--------Link162 : capacity = 10000 ; residualBanadiwdth = 8755------ 
+SharingSets---
+ 
+--------Link163 : capacity = 10000 ; residualBanadiwdth = 8755------ 
+SharingSets---
+ 
+--------Link164 : capacity = 10000 ; residualBanadiwdth = 8120------ 
+SharingSets---
+ 
+--------Link165 : capacity = 10000 ; residualBanadiwdth = 8080------ 
+SharingSets---
+ 
+--------Link166 : capacity = 10000 ; residualBanadiwdth = 8086------ 
+SharingSets---
+ 
+--------Link167 : capacity = 10000 ; residualBanadiwdth = 9196------ 
+SharingSets---
+ 
+--------Link168 : capacity = 10000 ; residualBanadiwdth = 8040------ 
+SharingSets---
+ 
+--------Link169 : capacity = 10000 ; residualBanadiwdth = 8346------ 
+SharingSets---
+ 
+--------Link170 : capacity = 10000 ; residualBanadiwdth = 8349------ 
+SharingSets---
+ 
+--------Link171 : capacity = 10000 ; residualBanadiwdth = 8110------ 
+SharingSets---
+ 
+--------Link172 : capacity = 10000 ; residualBanadiwdth = 8213------ 
+SharingSets---
+ 
+--------Link173 : capacity = 10000 ; residualBanadiwdth = 8764------ 
+SharingSets---
+ 
+--------Link174 : capacity = 10000 ; residualBanadiwdth = 8683------ 
+SharingSets---
+ 
+--------Link175 : capacity = 10000 ; residualBanadiwdth = 9403------ 
+SharingSets---
+ 
+--------Link176 : capacity = 10000 ; residualBanadiwdth = 9275------ 
+SharingSets---
+ 
+--------Link177 : capacity = 10000 ; residualBanadiwdth = 8736------ 
+SharingSets---
+ 
+--------Link178 : capacity = 10000 ; residualBanadiwdth = 9164------ 
+SharingSets---
+ 
+--------Link179 : capacity = 10000 ; residualBanadiwdth = 9265------ 
+SharingSets---
+ 
+--------Link180 : capacity = 10000 ; residualBanadiwdth = 9380------ 
+SharingSets---
+ 
+--------Link181 : capacity = 10000 ; residualBanadiwdth = 8586------ 
+SharingSets---
+ 
+--------Link182 : capacity = 10000 ; residualBanadiwdth = 9016------ 
+SharingSets---
+ 
+--------Link183 : capacity = 10000 ; residualBanadiwdth = 8180------ 
+SharingSets---
+ 
+--------Link184 : capacity = 10000 ; residualBanadiwdth = 9300------ 
+SharingSets---
+ 
+--------Link185 : capacity = 10000 ; residualBanadiwdth = 9465------ 
+SharingSets---
+ 
+--------Link186 : capacity = 10000 ; residualBanadiwdth = 9010------ 
+SharingSets---
+ 
+--------Link187 : capacity = 10000 ; residualBanadiwdth = 9156------ 
+SharingSets---
+ 
+--------Link188 : capacity = 10000 ; residualBanadiwdth = 8850------ 
+SharingSets---
+ 
+--------Link189 : capacity = 10000 ; residualBanadiwdth = 8850------ 
+SharingSets---
+ 
+--------Link190 : capacity = 10000 ; residualBanadiwdth = 8878------ 
+SharingSets---
+ 
+--------Link191 : capacity = 10000 ; residualBanadiwdth = 8420------ 
+SharingSets---
+ 
+--------Link192 : capacity = 10000 ; residualBanadiwdth = 7434------ 
+SharingSets---
+ 
+--------Link193 : capacity = 10000 ; residualBanadiwdth = 6176------ 
+SharingSets---
+ 
+--------Link194 : capacity = 10000 ; residualBanadiwdth = 6288------ 
+SharingSets---
+ 
+--------Link195 : capacity = 10000 ; residualBanadiwdth = 6288------ 
+SharingSets---
+ 
+--------Link196 : capacity = 10000 ; residualBanadiwdth = 6557------ 
+SharingSets---
+ 
+--------Link197 : capacity = 10000 ; residualBanadiwdth = 6776------ 
+SharingSets---
+ 
+--------Link198 : capacity = 10000 ; residualBanadiwdth = 6296------ 
+SharingSets---
+ 
+--------Link199 : capacity = 10000 ; residualBanadiwdth = 7174------ 
+SharingSets---
+ 
+--------Link200 : capacity = 10000 ; residualBanadiwdth = 6288------ 
+SharingSets---
+ 
+--------Link201 : capacity = 10000 ; residualBanadiwdth = 8904------ 
+SharingSets---
+ 
+--------Link202 : capacity = 10000 ; residualBanadiwdth = 6906------ 
+SharingSets---
+ 
+--------Link203 : capacity = 10000 ; residualBanadiwdth = 6932------ 
+SharingSets---
+ 
+--------Link204 : capacity = 10000 ; residualBanadiwdth = 6221------ 
+SharingSets---
+ 
+--------Link205 : capacity = 10000 ; residualBanadiwdth = 6176------ 
+SharingSets---
+ 
+--------Link206 : capacity = 10000 ; residualBanadiwdth = 6137------ 
+SharingSets---
+ 
+--------Link207 : capacity = 10000 ; residualBanadiwdth = 6318------ 
+SharingSets---
+ 
+--------Link208 : capacity = 10000 ; residualBanadiwdth = 6710------ 
+SharingSets---
+ 
+--------Link209 : capacity = 10000 ; residualBanadiwdth = 9751------ 
+SharingSets---
+ 
+--------Link210 : capacity = 10000 ; residualBanadiwdth = 6200------ 
+SharingSets---
+ 
+--------Link211 : capacity = 10000 ; residualBanadiwdth = 8890------ 
+SharingSets---
+ 
+--------Link212 : capacity = 10000 ; residualBanadiwdth = 7106------ 
+SharingSets---
+ 
+--------Link213 : capacity = 10000 ; residualBanadiwdth = 7065------ 
+SharingSets---
+ 
+--------Link214 : capacity = 10000 ; residualBanadiwdth = 7427------ 
+SharingSets---
+ 
+--------Link215 : capacity = 10000 ; residualBanadiwdth = 9280------ 
+SharingSets---
+ 
+--------Link216 : capacity = 10000 ; residualBanadiwdth = 8963------ 
+SharingSets---
+ 
+--------Link217 : capacity = 10000 ; residualBanadiwdth = 8429------ 
+SharingSets---
+ 
+--------Link218 : capacity = 10000 ; residualBanadiwdth = 9206------ 
+SharingSets---
+ 
+--------Link219 : capacity = 10000 ; residualBanadiwdth = 9164------ 
+SharingSets---
+ 
+--------Link220 : capacity = 10000 ; residualBanadiwdth = 9835------ 
+SharingSets---
+ 
+--------Link221 : capacity = 10000 ; residualBanadiwdth = 9206------ 
+SharingSets---
+ 
+--------Link222 : capacity = 10000 ; residualBanadiwdth = 9310------ 
+SharingSets---
+ 
+--------Link223 : capacity = 10000 ; residualBanadiwdth = 7298------ 
+SharingSets---
+Nb of Rejected request before 2nd run :47 Nb of Rejected request After 2nd run :47
+---- Revenue (if offline mode, it is the revenue for the initial set):21901.095000000005 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+---- Revenue (if offline mode, it is the revenue after embedding the rejected set):21901.095000000005 considering VM cost = 60$ and bandwidth cost per 0.003$/Mb = 3$/Gb -----
+ 
+------------------ Execution of : bandwidthShareModel -------------------
+ 
+---- ExecutionTime:111 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate for the initial set )70.0 -----
+ 
+---- Rejection Rate (if offline mode, it is the rejection rate after embedding  the rejected set)100.0 -----
+ 
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain for the initial set :46.76324782211098 bandwidth can be shared :20777reserved shared bandwidth 11061
+
+---- Bandwidth Gain :(if offline mode, it is the bandwidth gain after trying to embed the rejected requests :46.76324782211098 bandwidth can be shared :20777reserved shared bandwidth 11061
+==================================================================================================================================

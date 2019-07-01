@@ -1,0 +1,52 @@
+
+
+-----------------------------------------------------------------TEST WHILE SETTING CPLEX PARAM------------------------------------=============
+Test for Nb of requests = 5 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :78
+ ObjectiveValue (totalBw to reserve on the link)714.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)714 
+
+ =============Test for Nb of requests = 10 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :60
+ ObjectiveValue (totalBw to reserve on the link)1229.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)1981 
+
+ =============Test for Nb of requests = 15 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :56785
+ ObjectiveValue (totalBw to reserve on the link)1905.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)2977 
+
+ =============Test for Nb of requests = 20 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :6715109
+ ObjectiveValue (totalBw to reserve on the link)2121.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)4646 
+ 
+ 
+ =============Test for Nb of requests = 5000 ; Bandwidth generated between <100,500>=============
+
+ ====== TBSH-Design ===== 
+ Execution Time :205
+ ObjectiveValue (totalBw to reserve on the link)902159 
+
+ =============Test for Nb of requests = 25 ; Bandwidth generated between <100,500>=============
+

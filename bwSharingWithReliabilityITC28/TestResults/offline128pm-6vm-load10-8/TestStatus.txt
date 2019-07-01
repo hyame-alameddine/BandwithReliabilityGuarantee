@@ -1,0 +1,58 @@
+
+=============================Network : FatTreeNetwork(128,6,2,2,32,1000,10000,10000);=============================
+
+=============================Requests: Nb : 100=== VMs range : <5,25> === Bw range : <100,500 >=============================
+
+=============================LOAD : 8===Arrival : 80===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 0====
+
+====Starting test for set 1====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 1====
+
+====Starting test for set 2====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 2====
+
+====Starting test for set 3====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 3====
+
+====Starting test for set 4====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 4====
+
+
+=============================LOAD : 10===Arrival : 100===Departure : 10=============================
+====Starting test for set 0====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 0====
+
+====Starting test for set 1====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 1====
+
+====Starting test for set 2====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 2====
+
+====Starting test for set 3====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 3====
+
+====Starting test for set 4====
+=Starting test for Offline mode =
+=Starting test for bandwidthShareModel=
+====Finished test of set 4====
+

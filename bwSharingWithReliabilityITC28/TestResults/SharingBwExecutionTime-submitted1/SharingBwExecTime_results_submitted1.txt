@@ -1,0 +1,47 @@
+=============Test for Nb of requests = 5 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :30
+ ObjectiveValue (totalBw to reserve on the link)851.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)851 
+
+ =============Test for Nb of requests = 10 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :87
+ ObjectiveValue (totalBw to reserve on the link)1277.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)1277 
+
+ =============Test for Nb of requests = 15 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :44174
+ ObjectiveValue (totalBw to reserve on the link)1893.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)1929 
+
+ =============Test for Nb of requests = 20 ; Bandwidth generated between <100,500>=============
+
+ ====== ShareBwBetweenTenantModel ===== 
+ Execution Time :10369239
+ ObjectiveValue (totalBw to reserve on the link)1971.0 
+
+  ====== TBSH-Design ===== 
+ Execution Time :0
+ ObjectiveValue (totalBw to reserve on the link)2282 
+=============Test for Nb of requests = 5000 ; Bandwidth generated between <100,500>=============
+  ====== TBSH-Design ===== 
+ Execution Time :59765
+ ObjectiveValue (totalBw to reserve on the link)152946 
+=============Test for Nb of requests = 5000 ; Bandwidth generated between <100,500>=============
+  ====== TBSH-Design ===== 
+ Execution Time :65
+ ObjectiveValue (totalBw to reserve on the link)155192 
